@@ -1,0 +1,27 @@
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    color: white;
+    padding: 5%;
+
+    ul {
+        padding: 0%;
+    }
+    
+    li {
+        list-style: none;
+    }
+
+    .footerImg {
+        width: 15px;
+        height: 15px;
+        margin-right: 10px;
+    }
+}
+
+.footerLogo {
+    width: 100px;
+    height: 20px;
+}

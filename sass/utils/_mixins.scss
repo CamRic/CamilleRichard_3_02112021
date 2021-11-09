@@ -1,0 +1,16 @@
+
+
+/* RESPONSIVE */
+
+@mixin mobile-only {
+    @media screen and (max-width: $mobile-breakpoint) {
+        @content;
+    }
+}
+
+
+@mixin tab-only {
+    @media screen and (max-width: $tab-breakpoint) {
+        @content;
+    }
+}

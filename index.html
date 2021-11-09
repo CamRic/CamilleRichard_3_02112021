@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Ohmyfood!</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+
+        <div id="mainContainer">
+            <!-- HEADER -->
+            <header>
+                <img class="header-logo" title="Ohmyfood!logo" alt="Ohmyfood!" src="img/logo/ohmyfood.png" />
+            </header>
+
+
+            <!-- MAIN -->
+            <main>
+
+                <!-- LOCALISATION SECTION -->
+                <section id="localisationSection">
+
+                    <div class="localisationBloc">
+                    <!-- current location -->
+                        <div class="currentLocalisation">
+                            <img class="currentLocalisation__mapper" src="img/logo/map-marker-alt-solid.svg" alt="mapper" /> <!-- svg? -->
+                            <input class="currentLocalisation__input" name="local_input" type="text" value="Paris, Belleville" />
+                        </div>
+
+                        <!-- location explorer -->
+                        <div class="localisationExplorer">
+                            <!-- title -->
+                            <h1>Réservez le menu qui vous convient</h1>
+                            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                            <button class="explbttn" type="button">Explorer nos restaurants</button>
+
+                        </div>
+                    </div>
+
+                </section>
+
+                <!-- INFO SECTION -->
+                <section id="informationSection">
+
+                    <div class="informationBloc">
+
+                        <h1>Fonctionnement</h1>
+                            <!-- Info Cards -->
+                        <div class="informationCard">
+                            <svg class="informationCard__crcl" width="15" height="15">
+                                <circle cx="0" cy="8" r="8" fill="#121212" />
+                                <text x="0" y="8" fill="green">1</text>
+                            </svg>
+                            <img class="informationCard__img" src="img/logo/mobile-alt-solid.svg" alt="mobile" />
+                            <p class="informationCard__txt">Choisissez un restaurant</p>
+                        </div>
+                        <div class="informationCard">
+                            <svg class="informationCard__crcl"></svg>
+                            <svg class="informationCard__img menu"></svg>
+                            <!-- infocard__label -->
+                        </div>
+                        <div class="informationCard">
+                            <svg class="informationCard__crcl"></svg>
+                            <svg class="informationCard__img restaurant"></svg>
+                            <!-- infocard__label -->
+                        </div>
+                    </div>
+                    
+                </section>
+
+                <!-- RESTAURANTS SECTION -->
+                <section class="restaurantSection">
+
+                    <div class="restaurantBloc">
+                        <h1>Restaurants</h1>
+
+                            <!-- Restaurants Cards -->
+
+                        <!-- la palette du gout -->
+                        <div class="restaurantCard">
+                            <div class="restaurantCard__imgFrame">
+                                <img class="newImg" />
+                            </div>
+                            <div class="restaurantCard__description">
+                                <h2>La palette du goût</h2>
+                                <p>Mesnilmontant</p>
+                            </div>
+                        </div>
+
+                        <!-- La note enchantée -->
+                        <div class="restocard">
+                            <div class="restoImgFrame">
+                                <img class="newImg" />
+                            </div>
+                            <div class="descrBloc">
+                                <h2>La note enchantée</h2>
+                                <p>Charonne</p>
+                                <svg class="like_logo"></svg>
+                            </div>
+                        </div>
+                        <!-- A la française -->
+                        <div class="restocard">
+                            <div class="restoImgFrame">
+                                <img class="newImg" />
+                            </div>
+                            <div class="descrBloc">
+                                <h2>A la française</h2>
+                                <p>Cité Rouge</p>
+                                <svg class="like_logo"></svg>
+                            </div>
+                        </div>
+                        <!-- Le délice des sens -->
+                        <div class="restocard">
+                            <div class="restoImgFrame">
+                                <img class="newImg" />
+                            </div>
+                            <div class="descrBloc">
+                                <h2>Le délice des sens</h2>
+                                <p>Folie-Méricourt</p>
+                                <svg class="like_logo"></svg>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- FOOTER -->
+            <footer>
+                <img class="footerLogo" src="img/logo/ohmyfood@2x.svg" alt="ohmyfood!" />
+                <ul>
+                    <li><img class="footerImg" src="img/logo/utensils-solid.svg" alt="fourchette" />Proposer un restaurant</li>
+                    <li><img class="footerImg" src="img/logo/hands-helping-solid.svg" alt="hands" />Devenir partenaire</li>
+                    <li>Mentions légales</li>
+                    <li>Contact</li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>
