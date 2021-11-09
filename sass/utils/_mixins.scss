@@ -1,5 +1,13 @@
 
 
+/* BOX-SHADOWING */
+
+@mixin box-shadowing {
+    box-shadow: 4px 4px 7px 2px #ebebeb, -2px -2px 3px 2px #ebebeb;
+}
+
+
+
 /* RESPONSIVE */
 
 @mixin mobile-only {

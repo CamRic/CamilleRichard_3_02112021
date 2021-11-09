@@ -1,13 +1,43 @@
 /* COULEURS */
 /* RESPONSIVE BREAKPOINTS */
+/* BOX-SHADOWING */
 /* RESPONSIVE */
 body {
   font-family: "Roboto", sans-serif;
 }
 
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+p {
+  font-size: 18px;
+}
+
 .explbttn {
-  height: 40px;
-  width: auto;
+  height: 50px;
+  width: 220px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  background: linear-gradient(#ff79da, #9356DC);
+}
+
+.newrestaurant-bttn {
+  width: 80px;
+  height: 30px;
+  margin-top: 15px;
+  margin-right: 15px;
+  border: none;
+  border-radius: 3px;
+  color: #008766;
+  font-size: 16px;
+  background-color: #99e2d0;
 }
 
 header {
@@ -31,7 +61,7 @@ header {
 footer {
   display: flex;
   flex-direction: column;
-  background-color: gray;
+  background-color: #353535;
   color: white;
   padding: 5%;
 }
@@ -40,6 +70,7 @@ footer ul {
 }
 footer li {
   list-style: none;
+  margin-top: 5px;
 }
 footer .footerImg {
   width: 15px;
@@ -77,7 +108,7 @@ section {
   flex-direction: column;
   width: 100%;
   background-color: lightgray;
-  border-top: 2px solid;
+  border-top: 2px solid #cfcfcf;
 }
 
 .currentLocalisation {
@@ -87,7 +118,7 @@ section {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #eaeaea;
+  background: linear-gradient(#cfcfcf, 15%, #eaeaea);
 }
 .currentLocalisation__mapper {
   width: 15px;
@@ -96,7 +127,7 @@ section {
 }
 .currentLocalisation__input {
   height: 48px;
-  background-color: gray;
+  background: linear-gradient(#cfcfcf, 15%, #eaeaea);
   border: none;
 }
 
@@ -105,12 +136,15 @@ section {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  background-color: #f6f6f6;
 }
 .localisationExplorer h1 {
   width: 100%;
+  text-align: center;
 }
 .localisationExplorer p {
   width: 100%;
+  text-align: center;
 }
 
 .informationBloc {
@@ -124,9 +158,10 @@ section {
   flex-direction: row;
   width: 250px;
   height: 50px;
-  margin-top: 10px;
-  background-color: gray;
+  margin-bottom: 25px;
+  background-color: #f6f6f6;
   border-radius: 15px;
+  box-shadow: 4px 4px 7px 2px #ebebeb, -2px -2px 3px 2px #ebebeb;
 }
 .informationCard__crcl {
   overflow: visible;
@@ -140,7 +175,7 @@ section {
 .restaurantBloc {
   display: flex;
   flex-direction: column;
-  background-color: lightgray;
+  background-color: #f6f6f6;
   padding: 5%;
 }
 
@@ -152,6 +187,7 @@ section {
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
+  box-shadow: 4px 4px 7px 2px #ebebeb, -2px -2px 3px 2px #ebebeb;
 }
 .restaurantCard__imgFrame {
   height: 175px;
@@ -159,15 +195,32 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 .restaurantCard__description {
-  height: auto;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.restaurantCard__description img {
+  width: 20px;
+  height: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
 }
 .restaurantCard__description h2 {
-  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-left: 10px;
 }
 .restaurantCard__description p {
-  margin: 5px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
