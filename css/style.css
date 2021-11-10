@@ -262,4 +262,73 @@ section {
   background-image: url("../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
+.menuSection {
+  margin-top: 0px;
+}
+
+.carteBloc {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  justify-content: flex-end;
+  background-image: url("../../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 1400px;
+}
+
+.menuBloc {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  padding: 5%;
+  height: 1200px;
+  background-color: #f6f6f6;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+.menuBloc__title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.plateBloc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 350px;
+  background-color: white;
+  border-radius: 25px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.plateBloc__name {
+  margin: 0px;
+}
+.plateBloc__description {
+  margin: 0px;
+}
+.plateBloc__price {
+  margin-left: auto;
+}
+
+.sousmenuBloc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sousmenuBloc h4 {
+  align-self: flex-start;
+  border-bottom: 3px solid #99e2d0;
+  padding-bottom: 10px;
+  width: 40px;
+}
+
 /*# sourceMappingURL=style.css.map */
