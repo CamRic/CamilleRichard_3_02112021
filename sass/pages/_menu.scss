@@ -8,21 +8,26 @@
     flex-direction: column;
     width: 100%;
     padding-top: 25px;
-    padding-bottom: 50px;
     justify-content: flex-end;
     background-image: url("../../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
     background-position: top;
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 1400px; // test
+
+    button {
+        margin-top: 25px;
+        margin-bottom: 50px;
+        font-size: 18px;
+    }
 }
 
 .menuBloc {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: auto;
     padding: 5%;
-    height: 1200px; // test
+    margin-top: 200px;
     background-color: $color-sitelightgrey;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -31,35 +36,56 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Shrikhand', cursive;
+            margin: 0px;
+            align-self: flex-end;
+            font-weight: bold;
+            font-size: 24px;
+        }
     }
 }
 
 .plateBloc {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: space-between;
+    flex-direction: row;
     width: 350px;
     background-color: white;
-    border-radius: 25px;
+    border-radius: 20px;
     margin-bottom: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    height: 68px;
+    @include box-shadowing;
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+    }
 
     &__name {
-        //margin: 5px;
+        font-weight: bold;
         margin: 0px;
     }
 
     &__description {
-        //margin: 5px;
+        font-size: 16px;
         margin: 0px;
     }
 
     &__price {
-        //margin: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 20px;
+        align-self: flex-end;
         margin-left: auto;
+        color: $color-sitedark;
     }
 }
 
@@ -67,6 +93,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10px;
 
     h4 {
         align-self: flex-start;
@@ -74,4 +101,10 @@
         padding-bottom: 10px;
         width: 40px;
     }
+}
+
+.favoris {
+    width: 25px;
+    height: 25px;
+    margin-right: 20px;
 }

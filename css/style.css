@@ -271,21 +271,25 @@ section {
   flex-direction: column;
   width: 100%;
   padding-top: 25px;
-  padding-bottom: 50px;
   justify-content: flex-end;
   background-image: url("../../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   background-position: top;
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 1400px;
+}
+.carteBloc button {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  font-size: 18px;
 }
 
 .menuBloc {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: auto;
   padding: 5%;
-  height: 1200px;
+  margin-top: 200px;
   background-color: #f6f6f6;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -294,41 +298,70 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.menuBloc__title h3 {
+  font-family: "Roboto", sans-serif;
+  font-family: "Shrikhand", cursive;
+  margin: 0px;
+  align-self: flex-end;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .plateBloc {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: space-between;
+  flex-direction: row;
   width: 350px;
   background-color: white;
-  border-radius: 25px;
+  border-radius: 20px;
   margin-bottom: 15px;
+  height: 68px;
+  box-shadow: 4px 4px 7px 2px #ebebeb, -2px -2px 3px 2px #ebebeb;
+}
+.plateBloc__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 10px;
 }
 .plateBloc__name {
+  font-weight: bold;
   margin: 0px;
 }
 .plateBloc__description {
+  font-size: 16px;
   margin: 0px;
 }
 .plateBloc__price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 20px;
+  align-self: flex-end;
   margin-left: auto;
+  color: #353535;
 }
 
 .sousmenuBloc {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10px;
 }
 .sousmenuBloc h4 {
   align-self: flex-start;
   border-bottom: 3px solid #99e2d0;
   padding-bottom: 10px;
   width: 40px;
+}
+
+.favoris {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
