@@ -34,6 +34,7 @@ a {
   border-radius: 25px;
   color: white;
   font-weight: bold;
+  font-size: 18px;
   background: linear-gradient(#ff79da, #9356DC);
 }
 .explbttn:hover {
@@ -133,7 +134,7 @@ section {
   margin-right: 15px;
 }
 .currentLocalisation__input {
-  height: 48px;
+  height: 46px;
   background: linear-gradient(#cfcfcf, 15%, #eaeaea);
   border: none;
   font-size: 16px;
@@ -316,7 +317,7 @@ section {
   width: 350px;
   background-color: white;
   border-radius: 20px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   height: 68px;
   box-shadow: 4px 4px 7px 2px #ebebeb, -2px -2px 3px 2px #ebebeb;
 }
