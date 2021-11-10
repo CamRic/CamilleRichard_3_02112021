@@ -7,6 +7,10 @@
     color: white;
     font-weight: bold;
     background: linear-gradient($color-secondary, $color-primary);
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .newrestaurant-bttn {

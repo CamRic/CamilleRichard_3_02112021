@@ -13,7 +13,7 @@
         <div id="mainContainer">
             <!-- HEADER -->
             <header>
-                <img class="header-logo" title="Ohmyfood!logo" alt="Ohmyfood!" src="img/logo/ohmyfood.png" />
+                <a href="index.html"><img class="header-logo" alt="Ohmyfood!" src="img/logo/ohmyfood.png" /></a>
             </header>
 
 
@@ -54,7 +54,7 @@
                         <div class="informationCard">
                             <svg class="informationCard__crcl" width="18" height="18">
                                 <circle cx="0" cy="9" r="9" fill="#9356DC" />
-                                <text x="-5" y="14" fill="white">1</text>
+                                <text x="-4" y="14" fill="white">1</text>
                             </svg>
                             <img class="informationCard__img" src="img/logo/mobile-alt-solid.svg" alt="mobile" />
                             <p class="informationCard__txt">Choisissez un restaurant</p>
@@ -64,7 +64,7 @@
                         <div class="informationCard">
                             <svg class="informationCard__crcl" width="18" height="18">
                                 <circle cx="0" cy="9" r="9" fill="#9356DC" />
-                                <text x="-5" y="14" fill="white">2</text>
+                                <text x="-4" y="14" fill="white">2</text>
                             </svg>
                             <img class="informationCard__img" src="img/logo/list-ul-solid.svg" alt="menu" />
                             <p class="informationCard__txt">Composez votre menu</p>
@@ -74,7 +74,7 @@
                         <div class="informationCard">
                             <svg class="informationCard__crcl" width="18" height="18">
                                 <circle cx="0" cy="9" r="9" fill="#9356DC" />
-                                <text x="-5" y="14" fill="white">3</text>
+                                <text x="-4" y="14" fill="white">3</text>
                             </svg>
                             <img class="informationCard__img" src="img/logo/store-solid.svg" alt="store" />
                             <p class="informationCard__txt">Dégustez au restaurant</p>
@@ -92,50 +92,59 @@
                             <!-- Restaurants Cards -->
 
                         <!-- la palette du gout -->
-                        <div class="restaurantCard">
-                            <div class="restaurantCard__imgFrame" id="restaurant-palette_du_gout">
-                                <button class="newrestaurant-bttn">Nouveau</button>
+                        <a href="#">
+                            <div class="restaurantCard">
+                                <div class="restaurantCard__imgFrame" id="restaurant-palette_du_gout">
+                                    <button class="newrestaurant-bttn">Nouveau</button>
+                                </div>
+                                <div class="restaurantCard__description">
+                                    <h2>La palette du goût</h2>
+                                    <p>Mesnilmontant</p>
+                                    <img class="favoris" src="img/logo/heart-regular.svg" alt="coeur" />
+                                </div>
                             </div>
-                            <div class="restaurantCard__description">
-                                <h2>La palette du goût</h2>
-                                <p>Mesnilmontant</p>
-                                <img class="favoris" src="img/logo/heart-regular.svg" alt="coeur" />
-                            </div>
-                        </div>
+                        </a>
 
                         <!-- La note enchantée -->
-                        <div class="restaurantCard">
-                            <div class="restaurantCard__imgFrame" id="restaurant-note_enchantee">
-                                <button class="newrestaurant-bttn">Nouveau</button>
+                        <a href="#">
+                            <div class="restaurantCard">
+                                <div class="restaurantCard__imgFrame" id="restaurant-note_enchantee">
+                                    <button class="newrestaurant-bttn">Nouveau</button>
+                                </div>
+                                <div class="restaurantCard__description">
+                                    <h2>La note enchantée</h2>
+                                    <p>Charonne</p>
+                                    <img class="favoris" src="img/logo/heart-regular.svg" alt="coeur" />
+                                </div>
                             </div>
-                            <div class="restaurantCard__description">
-                                <h2>La note enchantée</h2>
-                                <p>Charonne</p>
-                                <img class="favoris" src="img/logo/heart-regular.svg" alt="coeur" />
-                            </div>
-                        </div>
+                        </a>
 
                         <!-- A la française -->
-                        <div class="restaurantCard">
-                            <div class="restaurantCard__imgFrame" id="restaurant-ala_francaise">
+                        <a href="#">
+                            <div class="restaurantCard">
+                                <div class="restaurantCard__imgFrame" id="restaurant-ala_francaise">
+                                </div>
+                                <div class="restaurantCard__description">
+                                    <h2>A la française</h2>
+                                    <p>Cité Rouge</p>
+                                    <img class="favoris" src="img/logo/heart-regular.svg" alt="coeur" />
+                                </div>
                             </div>
-                            <div class="restaurantCard__description">
-                                <h2>A la française</h2>
-                                <p>Cité Rouge</p>
-                                <img class="favoris" src="img/logo/heart-regular.svg" alt="coeur" />
-                            </div>
-                        </div>
+                        </a>
 
                         <!-- Le délice des sens -->
-                        <div class="restaurantCard">
-                            <div class="restaurantCard__imgFrame" id="restaurant-delice_des_sens">
+                        <a href="#">
+                            <div class="restaurantCard">
+                                <div class="restaurantCard__imgFrame" id="restaurant-delice_des_sens">
+                                </div>
+                                <div class="restaurantCard__description">
+                                    <h2>Le délice des sens</h2>
+                                    <p>Folie-Méricout</p>
+                                    <img class="favoris" src="img/logo/heart-regular.svg" alt="coeur" />
+                                </div>
                             </div>
-                            <div class="restaurantCard__description">
-                                <h2>Le délice des sens</h2>
-                                <p>Folie-Méricout</p>
-                                <img class="favoris" src="img/logo/heart-regular.svg" alt="coeur" />
-                            </div>
-                        </div>
+                        </a>
+
                     </div>
                 </section>
             </main>
@@ -144,10 +153,10 @@
             <footer>
                 <img class="footerLogo" src="img/logo/ohmyfood@2x.svg" alt="ohmyfood!" />
                 <ul>
-                    <li><img class="footerImg" src="img/logo/utensils-solid.svg" alt="fourchette" />Proposer un restaurant</li>
-                    <li><img class="footerImg" src="img/logo/hands-helping-solid.svg" alt="hands" />Devenir partenaire</li>
-                    <li>Mentions légales</li>
-                    <li>Contact</li>
+                    <a href="#"><li><img class="footerImg" src="img/logo/utensils-solid.svg" alt="fourchette" />Proposer un restaurant</li></a>
+                    <a href="#"><li><img class="footerImg" src="img/logo/hands-helping-solid.svg" alt="hands" />Devenir partenaire</li></a>
+                    <a href="#"><li>Mentions légales</li></a>
+                    <a href="#"><li>Contact</li></a>
                 </ul>
             </footer>
         </div>

@@ -18,6 +18,15 @@ p {
   font-size: 18px;
 }
 
+text {
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .explbttn {
   height: 50px;
   width: 220px;
@@ -26,6 +35,9 @@ p {
   color: white;
   font-weight: bold;
   background: linear-gradient(#ff79da, #9356DC);
+}
+.explbttn:hover {
+  cursor: pointer;
 }
 
 .newrestaurant-bttn {
@@ -124,6 +136,7 @@ section {
   height: 48px;
   background: linear-gradient(#cfcfcf, 15%, #eaeaea);
   border: none;
+  font-size: 16px;
 }
 
 .localisationExplorer {
@@ -131,10 +144,12 @@ section {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  padding-bottom: 50px;
   background-color: #f6f6f6;
 }
 .localisationExplorer h1 {
   width: 100%;
+  margin-bottom: auto;
   text-align: center;
 }
 .localisationExplorer p {
@@ -223,12 +238,12 @@ section {
 .restaurantCard__description h2 {
   margin-top: 5px;
   margin-bottom: 0px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .restaurantCard__description p {
   margin-top: 5px;
   margin-bottom: 0px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 #restaurant-palette_du_gout {
