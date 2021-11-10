@@ -1,0 +1,3 @@
+fleche header pages menus
+mettre les liens dans les cartes
+refaire etiquette "nouveau" carte restaurant index
