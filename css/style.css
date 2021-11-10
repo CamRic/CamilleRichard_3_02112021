@@ -33,7 +33,6 @@ a {
   border: none;
   border-radius: 25px;
   color: white;
-  font-weight: bold;
   font-size: 18px;
   background: linear-gradient(#ff79da, #9356DC);
 }
@@ -281,7 +280,6 @@ section {
 .carteBloc button {
   margin-top: 40px;
   margin-bottom: 80px;
-  font-size: 18px;
 }
 
 .menuBloc {
@@ -357,6 +355,7 @@ section {
   border-bottom: 3px solid #99e2d0;
   padding-bottom: 10px;
   width: 40px;
+  font-weight: normal;
 }
 
 .favoris {
