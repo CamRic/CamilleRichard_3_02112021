@@ -55,7 +55,7 @@ header {
 }
 
 .header-logo {
-  max-width: 100%;
+  width: 160px;
 }
 
 footer {
@@ -94,13 +94,8 @@ body {
   max-width: 1400px;
 }
 
-main {
-  margin-top: 20px;
-}
-
 section {
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .localisationBloc {
@@ -150,17 +145,23 @@ section {
 .informationBloc {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 5%;
+}
+.informationBloc h1 {
+  align-self: flex-start;
 }
 
 .informationCard {
   display: flex;
   flex-direction: row;
-  width: 250px;
-  height: 50px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 325px;
+  height: 75px;
   margin-bottom: 25px;
   background-color: #f6f6f6;
-  border-radius: 15px;
+  border-radius: 25px;
   box-shadow: 4px 4px 7px 2px #ebebeb, -2px -2px 3px 2px #ebebeb;
 }
 .informationCard__crcl {
@@ -169,19 +170,26 @@ section {
 .informationCard__img {
   width: 20px;
   height: 20px;
-  margin-top: 18px;
+  margin-left: 5px;
+}
+.informationCard__txt {
+  margin-left: 25px;
 }
 
 .restaurantBloc {
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
-  padding: 5%;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .restaurantCard {
   display: flex;
   flex-direction: column;
+  margin-bottom: 15px;
   width: auto;
   height: 250px;
   background-color: white;
@@ -205,11 +213,11 @@ section {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: space-between;
+  justify-content: center;
 }
 .restaurantCard__description img {
-  width: 20px;
-  height: 20px;
-  margin-top: 20px;
+  width: 25px;
+  height: 25px;
   margin-right: 20px;
 }
 .restaurantCard__description h2 {
@@ -221,6 +229,22 @@ section {
   margin-top: 5px;
   margin-bottom: 0px;
   margin-left: 10px;
+}
+
+#restaurant-palette_du_gout {
+  background-image: url("../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+#restaurant-note_enchantee {
+  background-image: url("../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+#restaurant-ala_francaise {
+  background-image: url("../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+#restaurant-delice_des_sens {
+  background-image: url("../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
 /*# sourceMappingURL=style.css.map */
