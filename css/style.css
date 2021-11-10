@@ -246,6 +246,25 @@ section {
   margin-left: 20px;
 }
 
+.etiquette {
+  width: 80px;
+  height: 30px;
+  background-color: #99e2d0;
+  color: #008766;
+  margin-top: 15px;
+  margin-right: 15px;
+  border: none;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.etiquette p {
+  margin: 0px;
+  text-align: center;
+  font-size: 16px;
+}
+
 #restaurant-palette_du_gout {
   background-image: url("../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
 }
