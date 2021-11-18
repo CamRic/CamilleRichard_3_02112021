@@ -15,7 +15,7 @@
     justify-content: flex-end;
 
     &__image-frame {
-        height: 400px;
+        height: 436.033px;
         width: auto;
         border: 8px solid $color-tertiary;
         border-radius: 5px;
@@ -36,10 +36,17 @@
 
     @include smallscreen-only {
         width: 62.5%;
+        &__image-frame {
+            height: 329.367px;
+        }
+        
     }
 
     @include tab-only {
         width: 480px;
+        &__image-frame {
+            height: 324.033px;
+        }
     }
 
     @include mobile-only {
@@ -48,6 +55,7 @@
 
         &__image-frame {
             border: none;
+            height: 217.35px;
         }
     }
 }

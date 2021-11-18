@@ -13,6 +13,12 @@ page carte :
 768 -> 1024 : wdth=62.5%
 > 1024 : wdth=640px
 
+image carte :
+320: hght: 217.35
+480: hght: 324.033
+768: ghth: 329.367
+1024: hght: 436.033
+
 
 Effets graphiques et animations
 

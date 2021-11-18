@@ -492,7 +492,7 @@ section {
   justify-content: flex-end;
 }
 .carteBloc__image-frame {
-  height: 400px;
+  height: 436.033px;
   width: auto;
   border: 8px solid #99e2d0;
   border-radius: 5px;
@@ -512,10 +512,16 @@ section {
   .carteBloc {
     width: 62.5%;
   }
+  .carteBloc__image-frame {
+    height: 329.367px;
+  }
 }
 @media screen and (max-width: 768px) {
   .carteBloc {
     width: 480px;
+  }
+  .carteBloc__image-frame {
+    height: 324.033px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -525,6 +531,7 @@ section {
   }
   .carteBloc__image-frame {
     border: none;
+    height: 217.35px;
   }
 }
 
