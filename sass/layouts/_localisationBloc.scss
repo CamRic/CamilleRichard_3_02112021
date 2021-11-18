@@ -1,0 +1,49 @@
+
+
+.localisationBloc {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: $color-sitelightgrey;
+    border-top: 2px solid #cfcfcf;
+}
+
+.currentLocalisation {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#cfcfcf, 15%, #eaeaea);
+    &__mapper {
+        width: 15px;
+        height: 15px;
+        margin-right: 15px;
+    }
+    &__input {
+        height: 46px;
+        background: linear-gradient(#cfcfcf, 15%, #eaeaea);
+        border: none;
+        font-size: 16px;
+    }
+}
+
+.localisationExplorer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 50px;
+    background-color: $color-sitelightgrey;
+    h1 {
+        width: 100%;
+        margin-bottom: auto;
+        text-align: center;
+    }
+    p {
+        width: 100%;
+        text-align: center;
+    }
+}

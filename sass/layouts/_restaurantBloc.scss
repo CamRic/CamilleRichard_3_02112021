@@ -1,0 +1,144 @@
+
+// BLOC
+
+.restaurantBloc {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: $color-sitelightgrey;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-right: 5%;
+    padding-left: 5%;
+    align-items: center;
+    border-radius: 20px;
+
+
+    h1 {
+        margin-right: auto;
+        width: 100%;
+    }
+
+    @include smallscreen-only {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        h1 {
+            margin-right: 0px;
+            width: auto;
+        }
+    }
+
+    @include mobile-only {
+        flex-direction: column;
+        border-radius: 0px;
+
+        h1 {
+            margin-right: 0px;
+            align-self: flex-start;
+        }
+    }
+}
+
+
+// CARD
+
+
+.restaurantCard {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    width: 400px;
+    height: 250px;
+    flex: 0 0 450px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    @include box-shadowing;
+
+    &__imgFrame {
+        height: 175px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    &__description {
+        height: 75px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: center;
+
+        img {
+            width: 25px;
+            height: 25px;
+            margin-right: 20px;
+        }
+        
+        h2 {
+            margin-top: 5px;
+            margin-bottom: 0px;
+            margin-left: 20px;
+        }
+
+        p {
+            margin-top: 5px;
+            margin-bottom: 0px;
+            margin-left: 20px;
+        }
+    }
+
+    @include mobile-only {
+        width: 335px;
+    }
+
+    @include tab-only {
+        width: 335px;
+    }
+
+    @include smallscreen-only {
+        flex: 0 0 250px;
+    }
+
+    @media (max-width: 374px) {
+        width: 280px;
+    }
+}
+
+
+// ETIQUETTES
+.etiquette {
+    width: 80px;
+    height: 30px;
+    background-color: $color-tertiary;
+    color: #008766;
+    margin-top: 15px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    p {
+        margin: 0px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+
+// IMAGES
+#restaurant-palette_du_gout { background-image: url("../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"); }
+#restaurant-note_enchantee { background-image: url("../img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"); }
+#restaurant-ala_francaise { background-image: url("../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"); }
+#restaurant-delice_des_sens { background-image: url("../img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"); }

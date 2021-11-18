@@ -1,16 +1,95 @@
 
+
+/* GLOBAL */
+
 body {
+    width: 100%;
     margin: 0px;
 }
-
-#mainContainer {
+/*
+main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    max-width: 1400px;
-}
+    flex-wrap: wrap;
 
+    @include main-container-padding;
+
+    @include mobile-only {
+        flex-direction: column;
+        padding: 0%;
+    }
+
+    @include tab-only {
+        flex-direction: column;
+    }
+}
+*/
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+
+    &--index {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        @include main-container-padding;
+
+        @include mobile-only {
+            flex-direction: column;
+            padding: 0%;
+        }
+    
+        @include tab-only {
+            flex-direction: column;
+        }
+    }
+}
 
 section {
     margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* SECTIONS */
+
+#localisationSection {
+    flex: 1 40%;
+    margin-right: 20px;
+
+    @include tab-only {
+        width: auto;
+        margin-right: 0px;
+    }
+    @include mobile-only {
+        width: auto;
+        margin-right: 0px;
+    }
+}
+
+#informationSection {
+    display: flex;
+    flex: 1 40%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    @include tab-only {
+        width: auto;
+    }
+    @include mobile-only {
+        width: auto;
+    }
+}
+
+#restaurantSection {
+    flex: 2 100%;
 }

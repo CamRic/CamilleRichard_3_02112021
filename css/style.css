@@ -1,6 +1,8 @@
 /* COULEURS */
 /* RESPONSIVE BREAKPOINTS */
+/* BLOCS VARAIBLES */
 /* BOX-SHADOWING */
+/* MAIN CONTAINER PADDING */
 /* RESPONSIVE */
 body {
   font-family: "Roboto", sans-serif;
@@ -40,34 +42,74 @@ a {
   cursor: pointer;
 }
 
-.newrestaurant-bttn {
-  width: 80px;
-  height: 30px;
-  margin-top: 15px;
-  margin-right: 15px;
-  border: none;
-  border-radius: 3px;
-  color: #008766;
-  font-size: 16px;
-  background-color: #99e2d0;
-}
-
-header {
-  max-width: 100%;
+.header-container {
+  width: 640px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 10px;
+  justify-content: space-between;
 }
-
-.index_arrow {
-  width: 50px;
-  height: 50px;
-  margin-right: auto;
+@media screen and (max-width: 1024px) {
+  .header-container {
+    width: 62.5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-container {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header-container {
+    width: 100%;
+    justify-content: space-around;
+  }
 }
 
 .header-logo {
-  width: 160px;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+@media screen and (max-width: 480px) {
+  .header-logo img {
+    width: 100%;
+  }
+}
+
+.header {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.header .header-arrow {
+  width: 20px;
+  height: 20px;
+  visibility: hidden;
+}
+.header .header-separator {
+  width: 20px;
+  height: 20px;
+  visibility: hidden;
+}
+.header--menu {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+.header--menu .header-arrow {
+  width: 20px;
+  height: 20px;
+  visibility: visible;
+  align-self: center;
+}
+.header--menu .header-separator {
+  width: 20px;
+  height: 20px;
+  visibility: hidden;
 }
 
 footer {
@@ -95,26 +137,111 @@ footer .footerImg {
   height: 20px;
 }
 
+/* GLOBAL */
 body {
+  width: 100%;
   margin: 0px;
 }
 
-#mainContainer {
+/*
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include main-container-padding;
+
+    @include mobile-only {
+        flex-direction: column;
+        padding: 0%;
+    }
+
+    @include tab-only {
+        flex-direction: column;
+    }
+}
+*/
+.mainContainer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  max-width: 1400px;
+  padding: 0%;
+}
+.mainContainer--index {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+@media screen and (max-width: 480px) {
+  .mainContainer--index {
+    flex-direction: column;
+    padding: 0%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mainContainer--index {
+    flex-direction: column;
+  }
 }
 
 section {
   margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* SECTIONS */
+#localisationSection {
+  flex: 1 40%;
+  margin-right: 20px;
+}
+@media screen and (max-width: 768px) {
+  #localisationSection {
+    width: auto;
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #localisationSection {
+    width: auto;
+    margin-right: 0px;
+  }
+}
+
+#informationSection {
+  display: flex;
+  flex: 1 40%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#informationSection h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+@media screen and (max-width: 768px) {
+  #informationSection {
+    width: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  #informationSection {
+    width: auto;
+  }
+}
+
+#restaurantSection {
+  flex: 2 100%;
 }
 
 .localisationBloc {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: lightgray;
+  height: 100%;
+  background-color: #f6f6f6;
   border-top: 2px solid #cfcfcf;
 }
 
@@ -157,16 +284,20 @@ section {
   text-align: center;
 }
 
+/* BLOC */
 .informationBloc {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5%;
+  justify-content: space-between;
+  height: auto;
 }
-.informationBloc h1 {
-  align-self: flex-start;
+@media screen and (max-width: 480px) {
+  .informationBloc h1 {
+    align-self: flex-start;
+  }
 }
-
+/* CARDS */
 .informationCard {
   display: flex;
   flex-direction: row;
@@ -174,10 +305,10 @@ section {
   justify-content: flex-start;
   width: 325px;
   height: 75px;
-  margin-bottom: 25px;
+  margin-top: 25px;
   background-color: #f6f6f6;
   border-radius: 25px;
-  box-shadow: 4px 4px 7px 2px #ebebeb, -2px -2px 3px 2px #ebebeb;
+  box-shadow: 2px 2px 10px 2px #ebebeb, -2px -2px 10px 2px #ebebeb;
 }
 .informationCard__crcl {
   overflow: visible;
@@ -190,31 +321,67 @@ section {
 .informationCard__txt {
   margin-left: 25px;
 }
+.informationCard:hover {
+  cursor: pointer;
+}
+@media (max-width: 375px) {
+  .informationCard {
+    width: 280px;
+  }
+}
 
 .restaurantBloc {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   background-color: #f6f6f6;
   padding-top: 30px;
   padding-bottom: 50px;
   padding-right: 5%;
   padding-left: 5%;
+  align-items: center;
+  border-radius: 20px;
+}
+.restaurantBloc h1 {
+  margin-right: auto;
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .restaurantBloc {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .restaurantBloc h1 {
+    margin-right: 0px;
+    width: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .restaurantBloc {
+    flex-direction: column;
+    border-radius: 0px;
+  }
+  .restaurantBloc h1 {
+    margin-right: 0px;
+    align-self: flex-start;
+  }
 }
 
 .restaurantCard {
   display: flex;
   flex-direction: column;
   margin-bottom: 25px;
-  width: auto;
+  width: 400px;
   height: 250px;
+  flex: 0 0 450px;
   background-color: white;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 4px 4px 7px 2px #ebebeb, -2px -2px 3px 2px #ebebeb;
+  box-shadow: 2px 2px 10px 2px #ebebeb, -2px -2px 10px 2px #ebebeb;
 }
 .restaurantCard__imgFrame {
   height: 175px;
-  background-image: url("../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -244,6 +411,26 @@ section {
   margin-top: 5px;
   margin-bottom: 0px;
   margin-left: 20px;
+}
+@media screen and (max-width: 480px) {
+  .restaurantCard {
+    width: 335px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .restaurantCard {
+    width: 335px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .restaurantCard {
+    flex: 0 0 250px;
+  }
+}
+@media (max-width: 374px) {
+  .restaurantCard {
+    width: 280px;
+  }
 }
 
 .etiquette {
@@ -283,23 +470,51 @@ section {
 }
 
 .menuSection {
-  margin-top: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .carteBloc {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding-top: 25px;
+  width: 640px;
   justify-content: flex-end;
-  background-image: url("../img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-  background-position: top;
-  background-size: 100%;
-  background-repeat: no-repeat;
+}
+.carteBloc__image-frame {
+  height: 100%;
+  width: auto;
+  border: 8px solid #99e2d0;
+  border-radius: 5px;
+}
+.carteBloc__image-frame img {
+  max-width: 100%;
+  height: 100%;
 }
 .carteBloc button {
   margin-top: 40px;
   margin-bottom: 80px;
+}
+@media screen and (max-width: 1024px) {
+  .carteBloc {
+    width: 62.5%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carteBloc {
+    width: 480px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .carteBloc {
+    width: 100%;
+    background-color: #f6f6f6;
+  }
+  .carteBloc__image-frame {
+    border: none;
+  }
 }
 
 .menuBloc {
@@ -308,10 +523,11 @@ section {
   align-items: center;
   width: auto;
   padding: 5%;
-  margin-top: 200px;
   background-color: #f6f6f6;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border: 8px solid #99e2d0;
+  transform: translateY(-35px);
 }
 .menuBloc__title {
   display: flex;
@@ -329,16 +545,21 @@ section {
   font-weight: bold;
   font-size: 24px;
 }
+@media screen and (max-width: 480px) {
+  .menuBloc {
+    border: none;
+  }
+}
 
 .plateBloc {
   display: flex;
   flex-direction: row;
-  width: 350px;
+  width: inherit;
   background-color: white;
   border-radius: 20px;
   margin-bottom: 25px;
-  height: 68px;
-  box-shadow: 4px 4px 7px 2px #ebebeb, -2px -2px 3px 2px #ebebeb;
+  height: auto;
+  box-shadow: 2px 2px 10px 2px #ebebeb, -2px -2px 10px 2px #ebebeb;
 }
 .plateBloc__title {
   display: flex;
@@ -371,8 +592,9 @@ section {
 .sousmenuBloc {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   margin-bottom: 10px;
+  width: 100%;
 }
 .sousmenuBloc h4 {
   align-self: flex-start;
@@ -385,7 +607,6 @@ section {
 .favoris {
   width: 25px;
   height: 25px;
-  margin-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
