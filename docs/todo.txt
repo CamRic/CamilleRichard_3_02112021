@@ -1,0 +1,13 @@
+
+ameliorer box-shadoing
+lien email
+pages menus
+repos github
+
+
+page carte :
+
+320 -> 480 : wdth=100%
+480 -> 768 : wdth=480px
+768 -> 1024 : wdth=62.5%
+> 1024 : wdth=640px

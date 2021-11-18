@@ -1,98 +1,102 @@
 <!DOCTYPE html>
 <html lang="fr">
+
     <head>
         <title>Ohmyfood!</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet"> 
     </head>
 
     <body>
 
-        <div id="mainContainer">
-            <!-- HEADER -->
-            <header>
-                <a href="index.html"><img class="header-logo" alt="Ohmyfood!" src="img/logo/ohmyfood@2xblack.svg" /></a>
-            </header>
+        <header class="header">
+            <div class="header-container">
+                <a href="index.html"><img class="header-arrow" /></a>
+                <a href="index.html" class="header-logo"><img alt="Ohmyfood!" src="img/logo/ohmyfood.png" /></a>
+                <img class="header-separator" />
+            </div>
+        </header>
 
+        <main class="mainContainer--index">
+            <!-- LOCALISATION SECTION -->
+            <section id="localisationSection">
 
-            <!-- MAIN -->
-            <main>
-
-                <!-- LOCALISATION SECTION -->
-                <section id="localisationSection">
-
-                    <div class="localisationBloc">
-                    <!-- current location -->
-                        <div class="currentLocalisation">
-                            <img class="currentLocalisation__mapper" src="img/logo/map-marker-alt-solid.svg" alt="mapper" /> <!-- svg? -->
-                            <input class="currentLocalisation__input" name="local_input" type="text" value="Paris, Belleville" />
-                        </div>
-
-                        <!-- location explorer -->
-                        <div class="localisationExplorer">
-                            <!-- title -->
-                            <h1>Réservez le menu qui vous convient</h1>
-                            <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                            <button class="explbttn" type="button">Explorer nos restaurants</button>
-
-                        </div>
+                <div class="localisationBloc">
+                <!-- current location -->
+                    <div class="currentLocalisation">
+                        <img class="currentLocalisation__mapper" src="img/logo/map-marker-alt-solid.svg" alt="mapper" /> <!-- svg? -->
+                        <input class="currentLocalisation__input" name="local_input" type="text" value="Paris, Belleville" />
                     </div>
 
-                </section>
+                    <!-- location explorer -->
+                    <div class="localisationExplorer">
+                        <!-- title -->
+                        <h1>Réservez le menu qui vous convient</h1>
+                        <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                        <button class="explbttn" type="button">Explorer nos restaurants</button>
 
-                <!-- INFO SECTION -->
-                <section id="informationSection">
-
-                    <div class="informationBloc">
-
-                        <h1>Fonctionnement</h1>
-                        <!-- Info Cards -->
-
-                            <!-- "Choisissez un restaurant" -->
-                        <div class="informationCard">
-                            <svg class="informationCard__crcl" width="18" height="18">
-                                <circle cx="0" cy="9" r="9" fill="#9356DC" />
-                                <text x="-4" y="14" fill="white">1</text>
-                            </svg>
-                            <img class="informationCard__img" src="img/logo/mobile-alt-solid.svg" alt="mobile" />
-                            <p class="informationCard__txt">Choisissez un restaurant</p>
-                        </div>
-
-                            <!-- "Composez votre menu" -->
-                        <div class="informationCard">
-                            <svg class="informationCard__crcl" width="18" height="18">
-                                <circle cx="0" cy="9" r="9" fill="#9356DC" />
-                                <text x="-4" y="14" fill="white">2</text>
-                            </svg>
-                            <img class="informationCard__img" src="img/logo/list-ul-solid.svg" alt="menu" />
-                            <p class="informationCard__txt">Composez votre menu</p>
-                        </div>
-
-                            <!-- "Dégustez au restaurant" -->
-                        <div class="informationCard">
-                            <svg class="informationCard__crcl" width="18" height="18">
-                                <circle cx="0" cy="9" r="9" fill="#9356DC" />
-                                <text x="-4" y="14" fill="white">3</text>
-                            </svg>
-                            <img class="informationCard__img" src="img/logo/store-solid.svg" alt="store" />
-                            <p class="informationCard__txt">Dégustez au restaurant</p>
-                        </div>
                     </div>
+                </div>
+
+            </section>
+
+            <!-- INFO SECTION -->
+            <section id="informationSection">
+                
+
+                <div class="informationBloc">
+                    <h1>Fonctionnement</h1>
+
+                    <!-- Info Cards -->
+
+                        <!-- "Choisissez un restaurant" -->
+                    <div class="informationCard">
+                        <svg class="informationCard__crcl" width="18" height="18">
+                            <circle cx="0" cy="9" r="9" fill="#9356DC" />
+                            <text x="-4" y="14" fill="white">1</text>
+                        </svg>
+                        <img class="informationCard__img" src="img/logo/mobile-alt-solid.svg" alt="mobile" />
+                        <p class="informationCard__txt">Choisissez un restaurant</p>
+                    </div>
+
+                        <!-- "Composez votre menu" -->
+                    <div class="informationCard">
+                        <svg class="informationCard__crcl" width="18" height="18">
+                            <circle cx="0" cy="9" r="9" fill="#9356DC" />
+                            <text x="-4" y="14" fill="white">2</text>
+                        </svg>
+                        <img class="informationCard__img" src="img/logo/list-ul-solid.svg" alt="menu" />
+                        <p class="informationCard__txt">Composez votre menu</p>
+                    </div>
+
+                        <!-- "Dégustez au restaurant" -->
+                    <div class="informationCard">
+                        <svg class="informationCard__crcl" width="18" height="18">
+                            <circle cx="0" cy="9" r="9" fill="#9356DC" />
+                            <text x="-4" y="14" fill="white">3</text>
+                        </svg>
+                        <img class="informationCard__img" src="img/logo/store-solid.svg" alt="store" />
+                        <p class="informationCard__txt">Dégustez au restaurant</p>
+                    </div>
+                </div>
+                
+            </section>
+
+             <!-- RESTAURANTS SECTION -->
+             <section id="restaurantSection">
+
+                <div class="restaurantBloc">
+
+                    <h1>Restaurants</h1>
+
+                        <!-- Restaurants Cards -->
                     
-                </section>
-
-                <!-- RESTAURANTS SECTION -->
-                <section class="restaurantSection">
-
-                    <div class="restaurantBloc">
-                        <h1>Restaurants</h1>
-
-                            <!-- Restaurants Cards -->
 
                         <!-- la palette du gout -->
-                        <a href="html/menu_palettedugout.html" class="restaurantCard">
+                        <a href="html/palettedugout.html" class="restaurantCard">
                             
                                 <div class="restaurantCard__imgFrame" id="restaurant-palette_du_gout">
                                     <div class="etiquette"><p>Nouveau</p></div>
@@ -106,7 +110,7 @@
                         </a>
 
                         <!-- La note enchantée -->
-                        <a href="html/menu_noteenchantee.html" class="restaurantCard">
+                        <a href="html/noteenchantee.html" class="restaurantCard">
                             
                                 <div class="restaurantCard__imgFrame" id="restaurant-note_enchantee">
                                     <div class="etiquette"><p>Nouveau</p></div>
@@ -120,7 +124,7 @@
                         </a>
 
                         <!-- A la française -->
-                        <a href="html/menu_alafrancaise.html" class="restaurantCard">
+                        <a href="html/alafrancaise.html" class="restaurantCard">
                             
                                 <div class="restaurantCard__imgFrame" id="restaurant-ala_francaise">
                                 </div>
@@ -133,32 +137,33 @@
                         </a>
 
                         <!-- Le délice des sens -->
-                        <a href="html/menu_delicedessens.html" class="restaurantCard">
-                            
-                                <div class="restaurantCard__imgFrame" id="restaurant-delice_des_sens">
-                                </div>
-                                <div class="restaurantCard__description">
-                                    <h2>Le délice des sens</h2>
-                                    <p>Folie-Méricout</p>
-                                    <img class="favoris" src="img/logo/heart-regular.svg" alt="coeur" />
-                                </div>
-                            
+                        <a href="html/delicedessens.html" class="restaurantCard">
+                            <div class="restaurantCard__imgFrame" id="restaurant-delice_des_sens">
+                            </div>
+                            <div class="restaurantCard__description">
+                                <h2>Le délice des sens</h2>
+                                <p>Folie-Méricout</p>
+                                <img class="favoris" src="img/logo/heart-regular.svg" alt="coeur" />
+                            </div>
                         </a>
+                    
+                </div>
+            </section>
 
-                    </div>
-                </section>
-            </main>
+        </main>
 
-            <!-- FOOTER -->
-            <footer>
-                <img class="footerLogo" src="img/logo/ohmyfood@2x.svg" alt="ohmyfood!" />
-                <ul>
-                    <a href="#"><li><img class="footerImg" src="img/logo/utensils-solid.svg" alt="fourchette" />Proposer un restaurant</li></a>
-                    <a href="#"><li><img class="footerImg" src="img/logo/hands-helping-solid.svg" alt="hands" />Devenir partenaire</li></a>
-                    <a href="#"><li>Mentions légales</li></a>
-                    <a href="#"><li>Contact</li></a>
-                </ul>
-            </footer>
-        </div>
+        <!-- FOOTER -->
+        <footer>
+            <img class="footerLogo" src="img/logo/ohmyfood@2x.svg" alt="ohmyfood!" />
+            <ul>
+                <a href="#"><li><img class="footerImg" src="img/logo/utensils-solid.svg" alt="fourchette" />Proposer un restaurant</li></a>
+                <a href="#"><li><img class="footerImg" src="img/logo/hands-helping-solid.svg" alt="hands" />Devenir partenaire</li></a>
+                <a href="#"><li>Mentions légales</li></a>
+                <a href="#"><li>Contact</li></a>
+            </ul>
+        </footer>
+
     </body>
+
+
 </html>

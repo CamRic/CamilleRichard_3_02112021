@@ -1,14 +1,6 @@
 
 /* COULEURS */
 
-$colours: (
-    primary: #9356DC,
-    secondary: #FF79DA,
-    tertiary: #99E2D0,
-    site-dark: #353535,
-    site-lightgrey: #f6f6f6
-);
-
 $color-primary: #9356DC;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
@@ -17,5 +9,12 @@ $color-sitelightgrey: #f6f6f6;
 
 /* RESPONSIVE BREAKPOINTS */
 
-$mobile-breakpoint: 768px;
-$tab-breakpoint: 1300px;
+$mobile-breakpoint: 480px;
+$tab-breakpoint: 768px;
+$smallscreen-breakpoint: 1024px;
+
+
+
+/* BLOCS VARAIBLES */
+
+$desktop-bloc-margin: 5%;

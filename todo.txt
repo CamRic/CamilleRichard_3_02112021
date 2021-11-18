@@ -1,5 +1,0 @@
-fleche header pages menus
-? mettre les liens dans les cartes ?
-relief etiquette nouveau
-ameliorer box-shadoing
-plateBloc wrap + overflow

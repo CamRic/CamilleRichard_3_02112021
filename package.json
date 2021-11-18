@@ -1,16 +1,17 @@
 {
-  "name": "ohmyfood_maquettes",
-  "version": "1.0.0",
-  "description": "ohmyfood_maquettes",
-  "main": "index.html",
-  "directories": {
-    "doc": "docs"
-  },
-  "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css",
-    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed"
-  },
-  "author": "",
-  "license": "ISC",
-  "browserslist": "last 4 versions"
-}
+    "name": "ohmyfood_maquettes",
+    "version": "1.0.0",
+    "description": "ohmyfood_maquettes",
+    "main": "index.html",
+    "directories": {
+      "doc": "docs"
+    },
+    "scripts": {
+      "sass": "sass --watch ./sass/main.scss:./css/style.css",
+      "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed"
+    },
+    "author": "",
+    "license": "ISC",
+    "browserslist": "last 4 versions"
+  }
+  
