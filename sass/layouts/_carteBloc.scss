@@ -15,13 +15,13 @@
     justify-content: flex-end;
 
     &__image-frame {
-        height: 436.033px;
+        height: auto;
         width: auto;
         border: 8px solid $color-tertiary;
         border-radius: 5px;
-        background: url("../img/restaurants/delice_des_sens_big-min.jpg");
-        background-size: cover;
-        background-position: center;
+        //background: url("../img/restaurants/delice_des_sens_big-min.jpg");
+        //background-size: cover;
+        //background-position: center;
 
         img {
             max-width: 100%;
@@ -37,7 +37,7 @@
     @include smallscreen-only {
         width: 62.5%;
         &__image-frame {
-            height: 329.367px;
+            //height: 329.367px;
         }
         
     }
@@ -45,7 +45,7 @@
     @include tab-only {
         width: 480px;
         &__image-frame {
-            height: 324.033px;
+            //height: 324.033px;
         }
     }
 
@@ -55,7 +55,7 @@
 
         &__image-frame {
             border: none;
-            height: 217.35px;
+            //height: 217.35px;
         }
     }
 }

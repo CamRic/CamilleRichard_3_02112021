@@ -492,13 +492,10 @@ section {
   justify-content: flex-end;
 }
 .carteBloc__image-frame {
-  height: 436.033px;
+  height: auto;
   width: auto;
   border: 8px solid #99e2d0;
   border-radius: 5px;
-  background: url("../img/restaurants/delice_des_sens_big-min.jpg");
-  background-size: cover;
-  background-position: center;
 }
 .carteBloc__image-frame img {
   max-width: 100%;
@@ -512,16 +509,10 @@ section {
   .carteBloc {
     width: 62.5%;
   }
-  .carteBloc__image-frame {
-    height: 329.367px;
-  }
 }
 @media screen and (max-width: 768px) {
   .carteBloc {
     width: 480px;
-  }
-  .carteBloc__image-frame {
-    height: 324.033px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -531,7 +522,6 @@ section {
   }
   .carteBloc__image-frame {
     border: none;
-    height: 217.35px;
   }
 }
 
