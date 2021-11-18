@@ -4,7 +4,6 @@ etiquette nouveau inset
 modif liens restocard
 modif couleur btn ac opacity https://openclassrooms.com/fr/courses/5919246-creez-des-animations-css-modernes/6340922-animez-les-couleurs-de-maniere-performante-avec-opacity
 menu img mobile -> https://openclassrooms.com/forum/sujet/affichage-background-sur-mobile
-compresser images
 
 
 page carte :
@@ -56,5 +55,5 @@ des points de suspension. Un exemple de l’effet attendu est fourni
 
 
 QUESTION SESSION MENTORAT
-image menus mobile 
-remplissage coeur "jaime" => partir de zero px et augmenter
+image menus mobile
+remplissage coeur "jaime"
