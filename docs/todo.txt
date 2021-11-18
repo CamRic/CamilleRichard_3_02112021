@@ -1,6 +1,9 @@
 
 pages menus
 etiquette nouveau inset
+modif liens restocard
+modif couleur btn ac opacity https://openclassrooms.com/fr/courses/5919246-creez-des-animations-css-modernes/6340922-animez-les-couleurs-de-maniere-performante-avec-opacity
+menu img mobile -> https://openclassrooms.com/forum/sujet/affichage-background-sur-mobile
 
 
 page carte :
@@ -22,7 +25,7 @@ L’ombre portée devra également être plus visible. ok
 ● À terme, les visiteurs pourront sauvegarder leurs menus préférés. Pour ça, un
 bouton "J’aime" en forme de cœur est présent sur la maquette. Au clic, il devra se
 remplir progressivement. Pour cette première version, l’effet peut être apparaître au
-survol sur desktop au lieu du clic.
+survol sur desktop au lieu du clic. 
 
 Page d’accueil
 ● Quand l’application aura plus de menus, un “loading spinner” sera nécessaire. Sur
@@ -41,3 +44,10 @@ Cela fait apparaître une petite coche à droite du plat. Cette coche devra coul
 la droite vers la gauche. Pour cette première version, l’effet peut apparaître au survol
 sur desktop au lieu du clic. Si l’intitulé du plat est trop long, il devra être rogné avec
 des points de suspension. Un exemple de l’effet attendu est fourni
+
+
+
+
+QUESTION SESSION MENTORAT
+image menus mobile
+remplissage coeur "jaime"

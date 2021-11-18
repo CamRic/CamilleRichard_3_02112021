@@ -1,0 +1,16 @@
+
+.favoris {
+    width: 25px;
+    height: 25px;
+    background: url("../img/logo/heart-regular.svg") no-repeat 100%;
+
+    &:active {
+        background: url("../img/logo/heart-solid.svg") no-repeat 100%;
+    }
+    
+    &:hover {
+            background: url("../img/logo/heart-solid.svg") no-repeat 100%;
+        }
+    
+    
+}
