@@ -50,11 +50,22 @@ a {
   height: 25px;
   background: url("../img/logo/heart-regular.svg") no-repeat 100%;
 }
-.favoris:active {
+.favoris:hover {
+  cursor: pointer;
   background: url("../img/logo/heart-solid.svg") no-repeat 100%;
 }
-.favoris:hover {
+.favoris::after {
   background: url("../img/logo/heart-solid.svg") no-repeat 100%;
+}
+
+.favoris_label {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+#favoris_delice_des_sens:checked + .favoris::after {
+  background: url("../img/logo/heart-solid.svg");
 }
 
 .header-container {
@@ -453,6 +464,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: inset 2px 2px #71d7be, inset -2px -2px #71d7be;
 }
 .etiquette p {
   margin: 0px;

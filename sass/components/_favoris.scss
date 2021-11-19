@@ -3,14 +3,25 @@
     width: 25px;
     height: 25px;
     background: url("../img/logo/heart-regular.svg") no-repeat 100%;
-
-    &:active {
-        background: url("../img/logo/heart-solid.svg") no-repeat 100%;
-    }
     
     &:hover {
-            background: url("../img/logo/heart-solid.svg") no-repeat 100%;
-        }
-    
-    
+        cursor: pointer;
+        background: url("../img/logo/heart-solid.svg") no-repeat 100%;
+    }
+
+    &::after {
+        background: url("../img/logo/heart-solid.svg") no-repeat 100%;
+    }
+}
+
+.favoris_label {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+#favoris_delice_des_sens:checked + .favoris::after {
+    background: url("../img/logo/heart-solid.svg");
 }
