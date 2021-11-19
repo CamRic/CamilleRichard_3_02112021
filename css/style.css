@@ -1,6 +1,7 @@
 /* COULEURS */
 /* RESPONSIVE BREAKPOINTS */
 /* BLOCS VARAIBLES */
+/* PLATE ANIMATION */
 /* BOX-SHADOWING */
 /* MAIN CONTAINER PADDING */
 /* RESPONSIVE */
@@ -41,7 +42,7 @@ a {
 }
 .explbttn:hover {
   cursor: pointer;
-  background: linear-gradient(#fface8, #ae80e5);
+  background: linear-gradient(#ff93e1, #a16be0);
   box-shadow: 2px 2px 10px 2px #d2d2d2, -2px -2px 10px 2px #d2d2d2;
 }
 
@@ -50,24 +51,29 @@ a {
   height: 25px;
   background: url("../img/logo/heart-regular.svg") no-repeat 100%;
 }
+.favoris img {
+  opacity: 0;
+}
 .favoris:hover {
+  background: none;
   cursor: pointer;
-  background: url("../img/logo/heart-solid.svg") no-repeat 100%;
 }
-.favoris::after {
-  background: url("../img/logo/heart-solid.svg") no-repeat 100%;
-}
-
-.favoris_label {
-  display: block;
-  position: relative;
-  overflow: hidden;
+.favoris:hover img {
+  opacity: 1;
+  animation: favoris-animation 1000ms ease-in-out;
 }
 
-#favoris_delice_des_sens:checked + .favoris::after {
-  background: url("../img/logo/heart-solid.svg");
+@keyframes favoris-animation {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 .header-container {
   width: 640px;
   display: flex;
@@ -579,6 +585,7 @@ section {
   border-radius: 20px;
   margin-bottom: 25px;
   height: auto;
+  overflow: hidden;
   box-shadow: 2px 2px 10px 2px #ebebeb, -2px -2px 10px 2px #ebebeb;
 }
 .plateBloc__title {
@@ -597,16 +604,52 @@ section {
   font-size: 16px;
   margin: 0px;
 }
+.plateBloc__rightbloc {
+  display: flex;
+  width: 100px;
+  transform: translateX(100px);
+}
 .plateBloc__price {
   font-size: 16px;
+  flex: 1;
   font-weight: bold;
   margin-right: 20px;
   align-self: flex-end;
   margin-left: auto;
   color: #353535;
 }
+.plateBloc__selection {
+  height: auto;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  flex: 1;
+}
+.plateBloc__selection img {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+}
 .plateBloc:hover {
   cursor: pointer;
+}
+.plateBloc:hover > .translated {
+  transform: translateX(50px);
+  animation-name: plate-selection-anim;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+}
+.plateBloc:hover img {
+  transform: rotate(0deg);
+  animation-name: plate-selection-check-rotation;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+}
+.plateBloc:not(:hover) > .translated {
+  animation: reverse-plate-selection-anim 500ms ease-in-out;
 }
 
 .sousmenuBloc {
@@ -622,6 +665,35 @@ section {
   padding-bottom: 10px;
   width: 40px;
   font-weight: normal;
+}
+
+.translated {
+  transform: translateX(100px);
+}
+
+@keyframes plate-selection-anim {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+@keyframes reverse-plate-selection-anim {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+@keyframes plate-selection-check-rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

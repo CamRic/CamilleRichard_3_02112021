@@ -3,25 +3,33 @@
     width: 25px;
     height: 25px;
     background: url("../img/logo/heart-regular.svg") no-repeat 100%;
+
+    img {
+        opacity: 0;
+    }
     
     &:hover {
+        background: none;
         cursor: pointer;
-        background: url("../img/logo/heart-solid.svg") no-repeat 100%;
+
+        img {
+            opacity: 1;
+            animation: favoris-animation 1000ms ease-in-out;
+        }
     }
 
-    &::after {
-        background: url("../img/logo/heart-solid.svg") no-repeat 100%;
+}
+
+@keyframes favoris-animation {
+    0% {
+        opacity: 0;
     }
-}
 
-.favoris_label {
-    display: block;
-    position: relative;
-    overflow: hidden;
-}
+    80% {
+        transform: scale(1.2);
+    }
 
-
-
-#favoris_delice_des_sens:checked + .favoris::after {
-    background: url("../img/logo/heart-solid.svg");
+    100% {
+        opacity: 1;
+    }
 }

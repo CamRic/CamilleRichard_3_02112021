@@ -88,11 +88,11 @@
     display: flex;
     flex-direction: row;
     width: inherit;
-    //max-width: 432px;
     background-color: white;
     border-radius: 20px;
     margin-bottom: 25px;
     height: auto;
+    overflow: hidden;
     @include box-shadowing;
 
     &__title {
@@ -114,8 +114,15 @@
         margin: 0px;
     }
 
+    &__rightbloc {
+        display: flex;
+        width: $plate-translation * 2;
+        transform: translateX($plate-translation * 2);
+    }
+
     &__price {
         font-size: 16px;
+        flex: 1;
         font-weight: bold;
         margin-right: 20px;
         align-self: flex-end;
@@ -123,9 +130,45 @@
         color: $color-sitedark;
     }
 
+    &__selection {
+        height: auto;
+        width: $plate-translation;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-tertiary;
+        flex: 1;
+
+        img {
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    }
+
     &:hover {
         cursor: pointer;
     }
+
+    &:hover > .translated {
+        transform: translateX($plate-translation);
+        animation-name: plate-selection-anim;
+        animation-duration: $plate-animation-duration;
+        animation-timing-function: ease-in-out;
+    }
+
+    &:hover img {
+        transform: rotate(0deg);
+        animation-name: plate-selection-check-rotation;
+        animation-duration: $plate-animation-duration;
+        animation-timing-function: ease-in-out;
+    }
+
+    &:not(:hover) > .translated {
+        animation: reverse-plate-selection-anim $plate-animation-duration ease-in-out;
+    }
+
 }
 
 .sousmenuBloc {
@@ -141,6 +184,40 @@
         padding-bottom: 10px;
         width: 40px;
         font-weight: normal;
+    }
+}
+
+
+// MANAGING PLATE SELECTION ANIMATION
+
+.translated {
+    transform: translateX($plate-translation * 2);
+}
+
+@keyframes plate-selection-anim {
+    0% {
+        transform: translateX($plate-translation * 2);
+    }
+    100% {
+        transform: translateX($plate-translation);
+    }
+}
+
+@keyframes reverse-plate-selection-anim {
+    0% {
+        transform: translateX($plate-translation);
+    }
+    100% {
+        transform: translateX($plate-translation * 2);
+    }
+}
+
+@keyframes plate-selection-check-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
 
