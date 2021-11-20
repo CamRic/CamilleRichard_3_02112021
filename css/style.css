@@ -612,11 +612,6 @@ section {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.plateBloc__rightbloc {
-  display: flex;
-  width: 100px;
-  transform: translateX(100px);
-}
 .plateBloc__price {
   font-size: 16px;
   font-weight: bold;
@@ -687,6 +682,81 @@ section {
   font-weight: normal;
 }
 
+.gradual-apparition__1 {
+  animation-duration: 500ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__2 {
+  animation-duration: 1000ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__3 {
+  animation-duration: 1500ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__4 {
+  animation-duration: 2000ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__5 {
+  animation-duration: 2500ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__6 {
+  animation-duration: 3000ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__7 {
+  animation-duration: 3500ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__8 {
+  animation-duration: 4000ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__9 {
+  animation-duration: 4500ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__10 {
+  animation-duration: 5000ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__11 {
+  animation-duration: 5500ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__12 {
+  animation-duration: 6000ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__13 {
+  animation-duration: 6500ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__14 {
+  animation-duration: 7000ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__15 {
+  animation-duration: 7500ms;
+  animation-name: plate-apparition-anim;
+}
+
+@keyframes plate-apparition-anim {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 @keyframes plate-selection-anim {
   0% {
     transform-origin: left;

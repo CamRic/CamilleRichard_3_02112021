@@ -122,12 +122,6 @@
         white-space: nowrap;
     }
 
-    &__rightbloc {
-        display: flex;
-        width: $plate-translation * 2;
-        transform: translateX($plate-translation * 2);
-    }
-
     &__price {
         font-size: 16px;
         font-weight: bold;
@@ -209,6 +203,86 @@
     }
 }
 
+.gradual-apparition {
+    &__1 {
+        animation-duration: $plate-animation-duration;
+        animation-name: plate-apparition-anim;
+    }
+    &__2 {
+        animation-duration: $plate-animation-duration*2;
+        animation-name: plate-apparition-anim;
+    }
+    &__3 {
+        animation-duration: $plate-animation-duration*3;
+        animation-name: plate-apparition-anim;
+    }
+    &__4 {
+        animation-duration: $plate-animation-duration*4;
+        animation-name: plate-apparition-anim;
+    }
+    &__5 {
+        animation-duration: $plate-animation-duration*5;
+        animation-name: plate-apparition-anim;
+    }
+    &__6 {
+        animation-duration: $plate-animation-duration*6;
+        animation-name: plate-apparition-anim;
+    }
+    &__7 {
+        animation-duration: $plate-animation-duration*7;
+        animation-name: plate-apparition-anim;
+    }
+    &__8 {
+        animation-duration: $plate-animation-duration*8;
+        animation-name: plate-apparition-anim;
+    }
+    &__9 {
+        animation-duration: $plate-animation-duration*9;
+        animation-name: plate-apparition-anim;
+    }
+    &__10 {
+        animation-duration: $plate-animation-duration*10;
+        animation-name: plate-apparition-anim;
+    }
+    &__11 {
+        animation-duration: $plate-animation-duration*11;
+        animation-name: plate-apparition-anim;
+    }
+    &__12 {
+        animation-duration: $plate-animation-duration*12;
+        animation-name: plate-apparition-anim;
+    }
+    &__13 {
+        animation-duration: $plate-animation-duration*13;
+        animation-name: plate-apparition-anim;
+    }
+    &__14 {
+        animation-duration: $plate-animation-duration*14;
+        animation-name: plate-apparition-anim;
+    }
+    &__15 {
+        animation-duration: $plate-animation-duration*15;
+        animation-name: plate-apparition-anim;
+    }
+}
+
+
+
+// APPARITION PLATS
+@keyframes plate-apparition-anim {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    60% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 
 // MANAGING PLATE SELECTION ANIMATION
 
