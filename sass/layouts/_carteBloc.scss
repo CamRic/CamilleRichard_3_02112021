@@ -102,16 +102,24 @@
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 10px;
+        width: inherit;
+        overflow: hidden;
+        flex-wrap: nowrap;
     }
 
     &__name {
         font-weight: bold;
         margin: 0px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     &__description {
         font-size: 16px;
         margin: 0px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     &__rightbloc {
@@ -122,7 +130,6 @@
 
     &__price {
         font-size: 16px;
-        flex: 1;
         font-weight: bold;
         margin-right: 20px;
         align-self: flex-end;
@@ -132,12 +139,12 @@
 
     &__selection {
         height: auto;
-        width: $plate-translation;
+        width: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: $color-tertiary;
-        flex: 1;
+        overflow: hidden;
 
         img {
             width: 25px;
@@ -152,7 +159,8 @@
     }
 
     &:hover > .translated {
-        transform: translateX($plate-translation);
+        width: 100px;
+        transform-origin: left;
         animation-name: plate-selection-anim;
         animation-duration: $plate-animation-duration;
         animation-timing-function: ease-in-out;
@@ -167,6 +175,20 @@
 
     &:not(:hover) > .translated {
         animation: reverse-plate-selection-anim $plate-animation-duration ease-in-out;
+    }
+
+    &:not(:hover) img {
+        transform: rotate(0deg);
+        animation-name: reverse-plate-selection-check-rotation;
+        animation-duration: $plate-animation-duration;
+        animation-timing-function: ease-in-out;
+    }
+
+    &:hover .plateBloc__name {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: max-content;
+        white-space: nowrap;
     }
 
 }
@@ -190,25 +212,24 @@
 
 // MANAGING PLATE SELECTION ANIMATION
 
-.translated {
-    transform: translateX($plate-translation * 2);
-}
 
 @keyframes plate-selection-anim {
     0% {
-        transform: translateX($plate-translation * 2);
+        transform-origin: left;
+        width: 0px;
     }
     100% {
-        transform: translateX($plate-translation);
+        width: 100px;
     }
 }
 
 @keyframes reverse-plate-selection-anim {
     0% {
-        transform: translateX($plate-translation);
+        width: 100px;
+        transform-origin: right;
     }
     100% {
-        transform: translateX($plate-translation * 2);
+        width: 0px;
     }
 }
 
@@ -218,6 +239,15 @@
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes reverse-plate-selection-check-rotation {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform:rotate(0deg);
     }
 }
 

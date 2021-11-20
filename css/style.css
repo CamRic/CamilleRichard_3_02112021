@@ -595,14 +595,22 @@ section {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
+  width: inherit;
+  overflow: hidden;
+  flex-wrap: nowrap;
 }
 .plateBloc__name {
   font-weight: bold;
   margin: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plateBloc__description {
   font-size: 16px;
   margin: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .plateBloc__rightbloc {
   display: flex;
@@ -611,7 +619,6 @@ section {
 }
 .plateBloc__price {
   font-size: 16px;
-  flex: 1;
   font-weight: bold;
   margin-right: 20px;
   align-self: flex-end;
@@ -620,12 +627,12 @@ section {
 }
 .plateBloc__selection {
   height: auto;
-  width: 50px;
+  width: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99e2d0;
-  flex: 1;
+  overflow: hidden;
 }
 .plateBloc__selection img {
   width: 25px;
@@ -637,7 +644,8 @@ section {
   cursor: pointer;
 }
 .plateBloc:hover > .translated {
-  transform: translateX(50px);
+  width: 100px;
+  transform-origin: left;
   animation-name: plate-selection-anim;
   animation-duration: 500ms;
   animation-timing-function: ease-in-out;
@@ -650,6 +658,18 @@ section {
 }
 .plateBloc:not(:hover) > .translated {
   animation: reverse-plate-selection-anim 500ms ease-in-out;
+}
+.plateBloc:not(:hover) img {
+  transform: rotate(0deg);
+  animation-name: reverse-plate-selection-check-rotation;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+}
+.plateBloc:hover .plateBloc__name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: max-content;
+  white-space: nowrap;
 }
 
 .sousmenuBloc {
@@ -667,24 +687,22 @@ section {
   font-weight: normal;
 }
 
-.translated {
-  transform: translateX(100px);
-}
-
 @keyframes plate-selection-anim {
   0% {
-    transform: translateX(100px);
+    transform-origin: left;
+    width: 0px;
   }
   100% {
-    transform: translateX(50px);
+    width: 100px;
   }
 }
 @keyframes reverse-plate-selection-anim {
   0% {
-    transform: translateX(50px);
+    width: 100px;
+    transform-origin: right;
   }
   100% {
-    transform: translateX(100px);
+    width: 0px;
   }
 }
 @keyframes plate-selection-check-rotation {
@@ -693,6 +711,14 @@ section {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@keyframes reverse-plate-selection-check-rotation {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 
