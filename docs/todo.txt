@@ -8,6 +8,7 @@ modif couleur btn ac opacity https://openclassrooms.com/fr/courses/5919246-creez
 menu img mobile -> https://openclassrooms.com/forum/sujet/affichage-background-sur-mobile
 anim app plats
 resto sect marg bott
+finir loading spinner
 
 page carte :
 

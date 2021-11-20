@@ -5,6 +5,9 @@
 body {
     width: 100%;
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .mainContainer {
@@ -17,6 +20,7 @@ body {
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
+        animation: mainContainer-apparition 6s ease-in-out;
         @include main-container-padding;
 
         @include mobile-only {
@@ -32,7 +36,6 @@ body {
 
 section {
     margin-top: 20px;
-    margin-bottom: 20px;
     width: 100%;
 }
 
@@ -67,4 +70,16 @@ section {
 
 #restaurantSection {
     flex: 2 100%;
+}
+
+@keyframes mainContainer-apparition {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
