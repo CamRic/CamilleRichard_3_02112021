@@ -6,25 +6,7 @@ body {
     width: 100%;
     margin: 0px;
 }
-/*
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
 
-    @include main-container-padding;
-
-    @include mobile-only {
-        flex-direction: column;
-        padding: 0%;
-    }
-
-    @include tab-only {
-        flex-direction: column;
-    }
-}
-*/
 .mainContainer {
     display: flex;
     justify-content: center;
@@ -80,13 +62,6 @@ section {
     h1 {
         margin-top: 0px;
         margin-bottom: 0px;
-    }
-
-    @include tab-only {
-        width: auto;
-    }
-    @include mobile-only {
-        width: auto;
     }
 }
 

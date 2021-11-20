@@ -175,25 +175,6 @@ body {
   margin: 0px;
 }
 
-/*
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    @include main-container-padding;
-
-    @include mobile-only {
-        flex-direction: column;
-        padding: 0%;
-    }
-
-    @include tab-only {
-        flex-direction: column;
-    }
-}
-*/
 .mainContainer {
   display: flex;
   justify-content: center;
@@ -252,16 +233,6 @@ section {
 #informationSection h1 {
   margin-top: 0px;
   margin-bottom: 0px;
-}
-@media screen and (max-width: 768px) {
-  #informationSection {
-    width: auto;
-  }
-}
-@media screen and (max-width: 480px) {
-  #informationSection {
-    width: auto;
-  }
 }
 
 #restaurantSection {
@@ -748,7 +719,7 @@ section {
     opacity: 0;
     transform: translateY(15px);
   }
-  60% {
+  80% {
     opacity: 0;
     transform: translateY(15px);
   }
