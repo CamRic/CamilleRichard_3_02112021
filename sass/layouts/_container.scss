@@ -5,26 +5,11 @@
 body {
     width: 100%;
     margin: 0px;
-}
-/*
-main {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    @include main-container-padding;
-
-    @include mobile-only {
-        flex-direction: column;
-        padding: 0%;
-    }
-
-    @include tab-only {
-        flex-direction: column;
-    }
+    flex-direction: column;
+    align-items: center;
 }
-*/
+
 .mainContainer {
     display: flex;
     justify-content: center;
@@ -35,6 +20,7 @@ main {
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
+        animation: mainContainer-apparition 6s ease-in-out;
         @include main-container-padding;
 
         @include mobile-only {
@@ -50,7 +36,6 @@ main {
 
 section {
     margin-top: 20px;
-    margin-bottom: 20px;
     width: 100%;
 }
 
@@ -81,15 +66,20 @@ section {
         margin-top: 0px;
         margin-bottom: 0px;
     }
-
-    @include tab-only {
-        width: auto;
-    }
-    @include mobile-only {
-        width: auto;
-    }
 }
 
 #restaurantSection {
     flex: 2 100%;
+}
+
+@keyframes mainContainer-apparition {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

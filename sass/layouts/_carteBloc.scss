@@ -88,11 +88,11 @@
     display: flex;
     flex-direction: row;
     width: inherit;
-    //max-width: 432px;
     background-color: white;
     border-radius: 20px;
     margin-bottom: 25px;
     height: auto;
+    overflow: hidden;
     @include box-shadowing;
 
     &__title {
@@ -102,16 +102,24 @@
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left: 10px;
+        width: inherit;
+        overflow: hidden;
+        flex-wrap: nowrap;
     }
 
     &__name {
         font-weight: bold;
         margin: 0px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     &__description {
         font-size: 16px;
         margin: 0px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     &__price {
@@ -123,9 +131,60 @@
         color: $color-sitedark;
     }
 
+    &__selection {
+        height: auto;
+        width: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-tertiary;
+        overflow: hidden;
+
+        img {
+            width: 25px;
+            height: 25px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    }
+
     &:hover {
         cursor: pointer;
     }
+
+    &:hover > .translated {
+        width: 100px;
+        transform-origin: left;
+        animation-name: plate-selection-anim;
+        animation-duration: $plate-animation-duration;
+        animation-timing-function: ease-in-out;
+    }
+
+    &:hover img {
+        transform: rotate(0deg);
+        animation-name: plate-selection-check-rotation;
+        animation-duration: $plate-animation-duration;
+        animation-timing-function: ease-in-out;
+    }
+
+    &:not(:hover) > .translated {
+        animation: reverse-plate-selection-anim $plate-animation-duration ease-in-out;
+    }
+
+    &:not(:hover) img {
+        transform: rotate(0deg);
+        animation-name: reverse-plate-selection-check-rotation;
+        animation-duration: $plate-animation-duration;
+        animation-timing-function: ease-in-out;
+    }
+
+    &:hover .plateBloc__name {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        width: max-content;
+        white-space: nowrap;
+    }
+
 }
 
 .sousmenuBloc {
@@ -141,6 +200,128 @@
         padding-bottom: 10px;
         width: 40px;
         font-weight: normal;
+    }
+}
+
+.gradual-apparition {
+    &__1 {
+        animation-duration: $plate-animation-duration;
+        animation-name: plate-apparition-anim;
+    }
+    &__2 {
+        animation-duration: $plate-animation-duration*2;
+        animation-name: plate-apparition-anim;
+    }
+    &__3 {
+        animation-duration: $plate-animation-duration*3;
+        animation-name: plate-apparition-anim;
+    }
+    &__4 {
+        animation-duration: $plate-animation-duration*4;
+        animation-name: plate-apparition-anim;
+    }
+    &__5 {
+        animation-duration: $plate-animation-duration*5;
+        animation-name: plate-apparition-anim;
+    }
+    &__6 {
+        animation-duration: $plate-animation-duration*6;
+        animation-name: plate-apparition-anim;
+    }
+    &__7 {
+        animation-duration: $plate-animation-duration*7;
+        animation-name: plate-apparition-anim;
+    }
+    &__8 {
+        animation-duration: $plate-animation-duration*8;
+        animation-name: plate-apparition-anim;
+    }
+    &__9 {
+        animation-duration: $plate-animation-duration*9;
+        animation-name: plate-apparition-anim;
+    }
+    &__10 {
+        animation-duration: $plate-animation-duration*10;
+        animation-name: plate-apparition-anim;
+    }
+    &__11 {
+        animation-duration: $plate-animation-duration*11;
+        animation-name: plate-apparition-anim;
+    }
+    &__12 {
+        animation-duration: $plate-animation-duration*12;
+        animation-name: plate-apparition-anim;
+    }
+    &__13 {
+        animation-duration: $plate-animation-duration*13;
+        animation-name: plate-apparition-anim;
+    }
+    &__14 {
+        animation-duration: $plate-animation-duration*14;
+        animation-name: plate-apparition-anim;
+    }
+    &__15 {
+        animation-duration: $plate-animation-duration*15;
+        animation-name: plate-apparition-anim;
+    }
+}
+
+
+
+// APPARITION PLATS
+@keyframes plate-apparition-anim {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    80% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+// MANAGING PLATE SELECTION ANIMATION
+
+
+@keyframes plate-selection-anim {
+    0% {
+        transform-origin: left;
+        width: 0px;
+    }
+    100% {
+        width: 100px;
+    }
+}
+
+@keyframes reverse-plate-selection-anim {
+    0% {
+        width: 100px;
+        transform-origin: right;
+    }
+    100% {
+        width: 0px;
+    }
+}
+
+@keyframes plate-selection-check-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes reverse-plate-selection-check-rotation {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform:rotate(0deg);
     }
 }
 

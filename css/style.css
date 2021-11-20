@@ -1,6 +1,7 @@
 /* COULEURS */
 /* RESPONSIVE BREAKPOINTS */
 /* BLOCS VARAIBLES */
+/* PLATE ANIMATION */
 /* BOX-SHADOWING */
 /* MAIN CONTAINER PADDING */
 /* RESPONSIVE */
@@ -41,7 +42,7 @@ a {
 }
 .explbttn:hover {
   cursor: pointer;
-  background: linear-gradient(#fface8, #ae80e5);
+  background: linear-gradient(#ff93e1, #a16be0);
   box-shadow: 2px 2px 10px 2px #d2d2d2, -2px -2px 10px 2px #d2d2d2;
 }
 
@@ -50,13 +51,104 @@ a {
   height: 25px;
   background: url("../img/logo/heart-regular.svg") no-repeat 100%;
 }
-.favoris:active {
-  background: url("../img/logo/heart-solid.svg") no-repeat 100%;
+.favoris img {
+  opacity: 0;
 }
 .favoris:hover {
-  background: url("../img/logo/heart-solid.svg") no-repeat 100%;
+  background: none;
+  cursor: pointer;
+}
+.favoris:hover img {
+  opacity: 1;
+  animation: favoris-animation 1000ms ease-in-out;
 }
 
+@keyframes favoris-animation {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.loading-spinner {
+  width: 800px;
+  height: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  animation: loading-spinner-disparition 6s ease-in-out;
+}
+.loading-spinner__image-container {
+  display: flex;
+  width: 400px;
+  height: 400px;
+}
+.loading-spinner__bottle {
+  width: 200px;
+  position: relative;
+  top: -80px;
+  left: 50px;
+  transform: rotate(-45deg) translate(-20px, 40px);
+  animation-name: bottle-animation;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+}
+.loading-spinner__glass {
+  width: 60px;
+  position: relative;
+  left: 50px;
+}
+.loading-spinner p {
+  font-size: 24px;
+}
+
+@keyframes bottle-animation {
+  0% {
+    transform: rotate(-45deg) translate(-20px, 40px);
+  }
+  10% {
+    transform: rotate(-45deg) translate(-20px, 40px);
+  }
+  20% {
+    transform: translate(-10px, 20px);
+    transform: rotate(0deg);
+  }
+  40% {
+    transform: rotate(40deg);
+  }
+  60% {
+    transform: rotate(40deg);
+  }
+  80% {
+    transform: translate(-10px, 20px);
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 40px);
+  }
+}
+@keyframes loading-spinner-disparition {
+  0% {
+    opacity: 1;
+    height: 600px;
+  }
+  50% {
+    opacity: 1;
+    height: 600px;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    height: 0px;
+    opacity: 0;
+  }
+}
 .header-container {
   width: 640px;
   display: flex;
@@ -133,6 +225,10 @@ footer {
   background-color: #353535;
   color: white;
   padding: 5%;
+  width: 100%;
+}
+footer > * {
+  margin-left: 50px;
 }
 footer ul {
   padding: 0%;
@@ -156,27 +252,11 @@ footer .footerImg {
 body {
   width: 100%;
   margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/*
-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    @include main-container-padding;
-
-    @include mobile-only {
-        flex-direction: column;
-        padding: 0%;
-    }
-
-    @include tab-only {
-        flex-direction: column;
-    }
-}
-*/
 .mainContainer {
   display: flex;
   justify-content: center;
@@ -187,6 +267,7 @@ main {
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
+  animation: mainContainer-apparition 6s ease-in-out;
   padding: 5%;
 }
 @media screen and (max-width: 480px) {
@@ -203,7 +284,6 @@ main {
 
 section {
   margin-top: 20px;
-  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -236,21 +316,22 @@ section {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-@media screen and (max-width: 768px) {
-  #informationSection {
-    width: auto;
-  }
-}
-@media screen and (max-width: 480px) {
-  #informationSection {
-    width: auto;
-  }
-}
 
 #restaurantSection {
   flex: 2 100%;
 }
 
+@keyframes mainContainer-apparition {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .localisationBloc {
   display: flex;
   flex-direction: column;
@@ -453,6 +534,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: inset 2px 2px #71d7be, inset -2px -2px #71d7be;
 }
 .etiquette p {
   margin: 0px;
@@ -567,6 +649,7 @@ section {
   border-radius: 20px;
   margin-bottom: 25px;
   height: auto;
+  overflow: hidden;
   box-shadow: 2px 2px 10px 2px #ebebeb, -2px -2px 10px 2px #ebebeb;
 }
 .plateBloc__title {
@@ -576,14 +659,22 @@ section {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
+  width: inherit;
+  overflow: hidden;
+  flex-wrap: nowrap;
 }
 .plateBloc__name {
   font-weight: bold;
   margin: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .plateBloc__description {
   font-size: 16px;
   margin: 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .plateBloc__price {
   font-size: 16px;
@@ -593,8 +684,51 @@ section {
   margin-left: auto;
   color: #353535;
 }
+.plateBloc__selection {
+  height: auto;
+  width: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  overflow: hidden;
+}
+.plateBloc__selection img {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+}
 .plateBloc:hover {
   cursor: pointer;
+}
+.plateBloc:hover > .translated {
+  width: 100px;
+  transform-origin: left;
+  animation-name: plate-selection-anim;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+}
+.plateBloc:hover img {
+  transform: rotate(0deg);
+  animation-name: plate-selection-check-rotation;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+}
+.plateBloc:not(:hover) > .translated {
+  animation: reverse-plate-selection-anim 500ms ease-in-out;
+}
+.plateBloc:not(:hover) img {
+  transform: rotate(0deg);
+  animation-name: reverse-plate-selection-check-rotation;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+}
+.plateBloc:hover .plateBloc__name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: max-content;
+  white-space: nowrap;
 }
 
 .sousmenuBloc {
@@ -610,6 +744,116 @@ section {
   padding-bottom: 10px;
   width: 40px;
   font-weight: normal;
+}
+
+.gradual-apparition__1 {
+  animation-duration: 500ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__2 {
+  animation-duration: 1000ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__3 {
+  animation-duration: 1500ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__4 {
+  animation-duration: 2000ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__5 {
+  animation-duration: 2500ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__6 {
+  animation-duration: 3000ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__7 {
+  animation-duration: 3500ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__8 {
+  animation-duration: 4000ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__9 {
+  animation-duration: 4500ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__10 {
+  animation-duration: 5000ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__11 {
+  animation-duration: 5500ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__12 {
+  animation-duration: 6000ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__13 {
+  animation-duration: 6500ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__14 {
+  animation-duration: 7000ms;
+  animation-name: plate-apparition-anim;
+}
+.gradual-apparition__15 {
+  animation-duration: 7500ms;
+  animation-name: plate-apparition-anim;
+}
+
+@keyframes plate-apparition-anim {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  80% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes plate-selection-anim {
+  0% {
+    transform-origin: left;
+    width: 0px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+@keyframes reverse-plate-selection-anim {
+  0% {
+    width: 100px;
+    transform-origin: right;
+  }
+  100% {
+    width: 0px;
+  }
+}
+@keyframes plate-selection-check-rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes reverse-plate-selection-check-rotation {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

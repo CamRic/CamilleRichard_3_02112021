@@ -20,6 +20,15 @@
             </div>
         </header>
 
+        <div class="loading-spinner">
+            <p class="loading-spinner__endtext">Votre table est prête!</p>
+            <div class="loading-spinner__image-container">
+                <img class="loading-spinner__bottle" src="img/logo/wine-bottle-solid.svg"/>
+                <img class="loading-spinner__glass" src="img/logo/wine-glass-alt-solid.svg" />
+            </div>
+            <p class="loading-spinner__starttext">Chargement...</p>
+        </div>
+
         <main class="mainContainer--index">
             <!-- LOCALISATION SECTION -->
             <section id="localisationSection">
@@ -124,28 +133,31 @@
                         </a>
 
                         <!-- A la française -->
-                        <a href="html/delicedessens.html" class="restaurantCard">
-                            
+                        <div class="restaurantCard">
+                            <a href="html/delicedessens.html">
                                 <div class="restaurantCard__imgFrame" id="restaurant-ala_francaise">
                                 </div>
-                                <div class="restaurantCard__description">
-                                    <h2>A la française</h2>
-                                    <p>Cité Rouge</p>
-                                    <div class="favoris"></div>
-                                </div>
+                            </a>
+                            <div class="restaurantCard__description">
+                                <h2>A la française</h2>
+                                <p>Cité Rouge</p>
+                                <div class="favoris"><img src="img/logo/heart-solid.svg" /></div>
+                            </div>
                             
-                        </a>
+                        </div>
 
                         <!-- Le délice des sens -->
-                        <a href="html/delicedessens.html" class="restaurantCard">
-                            <div class="restaurantCard__imgFrame" id="restaurant-delice_des_sens">
-                            </div>
+                        <div class="restaurantCard">
+                            <a href="html/delicedessens.html"> 
+                                <div class="restaurantCard__imgFrame" id="restaurant-delice_des_sens">
+                                </div>
+                            </a>
                             <div class="restaurantCard__description">
                                 <h2>Le délice des sens</h2>
                                 <p>Folie-Méricout</p>
                                 <div class="favoris"></div>
                             </div>
-                        </a>
+                        </div>
                     
                 </div>
             </section>
