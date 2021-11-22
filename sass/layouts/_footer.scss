@@ -4,10 +4,12 @@ footer {
     background-color: $color-sitedark;
     color: white;
     padding: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
     width: 100%;
 
     > * {
-        margin-left: 50px;
+        margin-left: 5%;
     }
 
     ul {

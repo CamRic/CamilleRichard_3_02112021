@@ -112,6 +112,7 @@
         margin: 0px;
         overflow: hidden;
         text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     &__description {
@@ -133,7 +134,7 @@
 
     &__selection {
         height: auto;
-        width: 0px;
+        width: 10%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -153,7 +154,7 @@
     }
 
     &:hover > .translated {
-        width: 100px;
+        width: 80px;
         transform-origin: left;
         animation-name: plate-selection-anim;
         animation-duration: $plate-animation-duration;
@@ -168,6 +169,7 @@
     }
 
     &:not(:hover) > .translated {
+        width: 0px;
         animation: reverse-plate-selection-anim $plate-animation-duration ease-in-out;
     }
 
@@ -293,13 +295,13 @@
         width: 0px;
     }
     100% {
-        width: 100px;
+        width: 80px;
     }
 }
 
 @keyframes reverse-plate-selection-anim {
     0% {
-        width: 100px;
+        width: 80px;
         transform-origin: right;
     }
     100% {

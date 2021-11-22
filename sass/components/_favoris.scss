@@ -22,10 +22,13 @@
 
 @keyframes favoris-animation {
     0% {
+        transform-origin: 12px 12px;
+        transform: scale(0);
         opacity: 0;
     }
 
     80% {
+        
         transform: scale(1.2);
     }
 

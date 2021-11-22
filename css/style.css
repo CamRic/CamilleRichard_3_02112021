@@ -65,6 +65,8 @@ a {
 
 @keyframes favoris-animation {
   0% {
+    transform-origin: 12px 12px;
+    transform: scale(0);
     opacity: 0;
   }
   80% {
@@ -105,6 +107,14 @@ a {
 }
 .loading-spinner p {
   font-size: 24px;
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .loading-spinner {
+    width: 100%;
+  }
 }
 
 @keyframes bottle-animation {
@@ -225,10 +235,12 @@ footer {
   background-color: #353535;
   color: white;
   padding: 5%;
+  padding-left: 0%;
+  padding-right: 0%;
   width: 100%;
 }
 footer > * {
-  margin-left: 50px;
+  margin-left: 5%;
 }
 footer ul {
   padding: 0%;
@@ -261,6 +273,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 0%;
+  width: 100%;
 }
 .mainContainer--index {
   display: flex;
@@ -668,6 +681,7 @@ section {
   margin: 0px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .plateBloc__description {
   font-size: 16px;
@@ -686,7 +700,7 @@ section {
 }
 .plateBloc__selection {
   height: auto;
-  width: 0px;
+  width: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -703,7 +717,7 @@ section {
   cursor: pointer;
 }
 .plateBloc:hover > .translated {
-  width: 100px;
+  width: 80px;
   transform-origin: left;
   animation-name: plate-selection-anim;
   animation-duration: 500ms;
@@ -716,6 +730,7 @@ section {
   animation-timing-function: ease-in-out;
 }
 .plateBloc:not(:hover) > .translated {
+  width: 0px;
   animation: reverse-plate-selection-anim 500ms ease-in-out;
 }
 .plateBloc:not(:hover) img {
@@ -827,12 +842,12 @@ section {
     width: 0px;
   }
   100% {
-    width: 100px;
+    width: 80px;
   }
 }
 @keyframes reverse-plate-selection-anim {
   0% {
-    width: 100px;
+    width: 80px;
     transform-origin: right;
   }
   100% {
