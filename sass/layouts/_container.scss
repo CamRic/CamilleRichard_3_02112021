@@ -21,7 +21,7 @@ body {
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
-        animation: mainContainer-apparition 6s ease-in-out;
+        animation: mainContainer-apparition 4s ease-in-out;
         @include main-container-padding;
 
         @include mobile-only {

@@ -2,7 +2,7 @@
 <html lang="fr">
 
     <head>
-        <title>A la française - Ohmyfood!</title>
+        <title>À la française - Ohmyfood!</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/style.css">
@@ -14,144 +14,157 @@
         <!-- HEADER -->
 
         <header class="header--menu">
-            <img class="header-arrow" src="../img/logo/arrow-left-solid.svg" />
-            <a href="../index.html" class="header-logo"><img alt="Ohmyfood!" src="../img/logo/ohmyfood.png" /></a>
-            <div class="header-separator"></div>
+            <div class="header-container">
+                <a href="../index.html" class="header-arrow"><img src="../img/logo/arrow-left-solid.svg" alt="header-arrow"/></a>
+                <a href="../index.html" class="header-logo"><img alt="Ohmyfood!" src="../img/logo/ohmyfood.png" /></a>
+                <div class="header-separator"></div>
+            </div>
+
         </header>
 
         <!-- MAIN -->
 
         <main class="mainContainer">
-
+            <!-- MENU SECTION -->
             <section class="menuSection">
 
+
                 <div class="carteBloc">
+                    <!-- image frame -->
+                    <div class="carteBloc__image-frame">
+                        <img src="../img/restaurants/a_la_francaise_big-min.jpg" />
+                    </div>
+
                     <div class="menuBloc"> <!-- carte -->
                         <div class="menuBloc__title"> <!-- nom du restaurant -->
-                            <h3>À la Française</h3>
-                            <img class="favoris" alt="coeur" src="../img/logo/heart-regular.svg" />
+                            <h3>À la française</h3>
+                            <div class="favoris"><img src="../img/logo/heart-solid.svg" /></div>
                         </div>
-                        <div class="sousmenuBloc">
-                            <h4>ENTREES</h4>
+                        <div class="sousmenuBloc" id="entrees">
+                            <h4 class="gradual-apparition__1">ENTRÉES</h4>
                             
-                                <div class="plateBloc">
+                                <div class="plateBloc gradual-apparition__2">
                                     <div class="plateBloc__title">
                                         <p class="plateBloc__name">Tartare de poulpe acidulé</p>
                                         <p class="plateBloc__description">Aux zestes d'orange</p>
                                     </div>
                                     <p class="plateBloc__price">25€</p>
+                                    <div class="plateBloc__selection translated"><img src="../img/logo/check-circle-regular.svg" /></div>
+                                    
                                 </div>
                             
 
                            
-                                <div class="plateBloc">
+                                <div class="plateBloc gradual-apparition__3">
                                     <div class="plateBloc__title">
                                         <p class="plateBloc__name">Velouté de légumes d'antan</p>
                                         <p class="plateBloc__description">Carotte, panais, topinambour</p>
                                     </div>
-                                    <p class="plateBloc__price">35€</p>
+                                        <p class="plateBloc__price">35€</p>
+                                        <div class="plateBloc__selection translated"><img src="../img/logo/check-circle-regular.svg" /></div>
                                 </div>
                             
 
                             
-                                <div class="plateBloc">
+                                <div class="plateBloc gradual-apparition__4">
                                     <div class="plateBloc__title">
                                         <p class="plateBloc__name">Soupe à l'oignon</p>
                                         <p class="plateBloc__description">Revisitée</p>
                                     </div>
                                     <p class="plateBloc__price">20€</p>
+                                    <div class="plateBloc__selection translated"><img src="../img/logo/check-circle-regular.svg" /></div>
                                 </div>
                             
                         </div>
 
-                        <div class="sousmenuBloc">
-                            <h4>PLATS</h4>
+                        <div class="sousmenuBloc" id="plats">
+                            <h4 class="gradual-apparition__5">PLATS</h4>
                             
-                                <div class="plateBloc">
+                                <div class="plateBloc gradual-apparition__6">
                                     <div class="plateBloc__title">
                                         <p class="plateBloc__name">Coquilles Saint-Jacques</p>
                                         <p class="plateBloc__description">Accompagnées d'une purée de panais</p>
                                     </div>
                                     <p class="plateBloc__price">40€</p>
+                                    <div class="plateBloc__selection translated"><img src="../img/logo/check-circle-regular.svg" /></div>
                                 </div>
                             
 
                             
-                                <div class="plateBloc">
+                                <div class="plateBloc gradual-apparition__7">
                                     <div class="plateBloc__title">
                                         <p class="plateBloc__name">Magret de canard</p>
-                                        <p class="plateBloc__description">Et parmentier de pomme de terre</p>
+                                        <p class="plateBloc__description">Et parmentier de pommes de terre</p>
                                     </div>
                                     <p class="plateBloc__price">35€</p>
+                                    <div class="plateBloc__selection translated"><img src="../img/logo/check-circle-regular.svg" /></div>
                                 </div>
                             
 
                             
-                                <div class="plateBloc">
+                                <div class="plateBloc gradual-apparition__8">
                                     <div class="plateBloc__title">
-                                        <p class="plateBloc__name">Pigeonneau d'Ille-et-Villaine</p>
+                                        <p class="plateBloc__name">Pigeonneau d’Ille-et-Vilaine</p>
                                         <p class="plateBloc__description">Sur son lit de gnocchis aux légumes</p>
                                     </div>
                                     <p class="plateBloc__price">44€</p>
+                                    <div class="plateBloc__selection translated"><img src="../img/logo/check-circle-regular.svg" /></div>
                                 </div>
                             
 
                         </div>
 
-                        <div class="sousmenuBloc">
-                            <h4>DESSERTS</h4>
+                        <div class="sousmenuBloc" id="desserts">
+                            <h4 class="gradual-apparition__9">DESSERTS</h4>
                             
-                                <div class="plateBloc">
+                                <div class="plateBloc gradual-apparition__10">
                                     <div class="plateBloc__title">
-                                        <p class="plateBloc__name">Pétales de violettes glacées</p>
-                                        <p class="plateBloc__description">Et purée de noisette</p>
+                                        <p class="plateBloc__name">Pétales de violettes glacés</p>
+                                        <p class="plateBloc__description">Et purée de noisettes</p>
                                     </div>
                                     <p class="plateBloc__price">18€</p>
+                                    <div class="plateBloc__selection translated"><img src="../img/logo/check-circle-regular.svg" /></div>
                                 </div>
                             
-
-                            
-                            
-                                <div class="plateBloc">
+                                <div class="plateBloc gradual-apparition__11">
                                     <div class="plateBloc__title">
                                         <p class="plateBloc__name">Fondant au chocolat</p>
                                         <p class="plateBloc__description">Revisité</p>
                                     </div>
                                     <p class="plateBloc__price">22€</p>
+                                    <div class="plateBloc__selection translated"><img src="../img/logo/check-circle-regular.svg" /></div>
                                 </div>
                             
-
-                            
-                            
-                                <div class="plateBloc">
+                                <div class="plateBloc gradual-apparition__12">
                                     <div class="plateBloc__title">
                                         <p class="plateBloc__name">Millefeuille croustillant</p>
-                                        <p class="plateBloc__description">Myrtilles et pâte d'amande</p>
+                                        <p class="plateBloc__description">Myrtilles et pâte d’amande</p>
                                     </div>
                                     <p class="plateBloc__price">23€</p>
+                                    <div class="plateBloc__selection translated"><img src="../img/logo/check-circle-regular.svg" /></div>
                                 </div>
                             
 
                         </div>
 
-                        <button class="explbttn">Commander</button>
+                        <button class="explbttn gradual-apparition__13">Commander</button>
 
                     </div>
+
                 </div>
             </section>
         </main>
 
-         <!-- FOOTER -->
-         <footer>
+        <!-- FOOTER -->
+        <footer>
             <img class="footerLogo" src="../img/logo/ohmyfood@2x.svg" alt="ohmyfood!" />
             <ul>
-                <a href="#"><li><img class="footerImg" src="../img/logo/utensils-solid.svg" alt="fourchette" />Proposer un restaurant</li></a>
-                <a href="#"><li><img class="footerImg" src="../img/logo/hands-helping-solid.svg" alt="hands" />Devenir partenaire</li></a>
-                <a href="#"><li>Mentions légales</li></a>
-                <a href="#"><li>Contact</li></a>
+                <li><a href="#"><img class="footerImg" src="../img/logo/utensils-solid.svg" alt="fourchette" />Proposer un restaurant</a></li>
+                <li><a href="#"><img class="footerImg" src="../img/logo/hands-helping-solid.svg" alt="hands" />Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
             </ul>
         </footer>
-        
-    </body>
 
+    </body>
 </html>
