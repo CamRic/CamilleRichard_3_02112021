@@ -7,8 +7,8 @@
       "doc": "docs"
     },
     "scripts": {
-      "sass": "sass --watch ./sass/main.scss:./css/style.css",
-      "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed"
+      "sass": "sass --watch ./sass/main.scss:./css/raw/style.css",
+      "prefix": "postcss ./css/raw/style.css --use autoprefixer -d ./css"
     },
     "author": "",
     "license": "ISC",
