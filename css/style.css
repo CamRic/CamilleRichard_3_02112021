@@ -60,7 +60,7 @@ a {
 }
 .favoris:hover img {
   opacity: 1;
-  animation: favoris-animation 1000ms ease-in-out;
+  animation: favoris-animation 800ms ease-in-out;
 }
 
 @keyframes favoris-animation {
@@ -70,7 +70,7 @@ a {
     opacity: 0;
   }
   80% {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   100% {
     opacity: 1;
