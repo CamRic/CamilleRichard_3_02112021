@@ -6,14 +6,16 @@
 
     img {
         opacity: 0;
+        scale: 1.1;
     }
     
     &:hover {
-        background: none;
+        //background: none;
         cursor: pointer;
 
         img {
             opacity: 1;
+            //scale: 1.1;
             animation: favoris-animation 800ms ease-in-out;
         }
     }
@@ -22,14 +24,18 @@
 
 @keyframes favoris-animation {
     0% {
-        transform-origin: 12px 12px;
-        transform: scale(0.5);
+        transform-origin: 0px 24px;
+        transform: scale(0.2);
         opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
     }
 
     80% {
         
-        transform: scale(1.1);
+        transform: scale(1);
     }
 
     100% {

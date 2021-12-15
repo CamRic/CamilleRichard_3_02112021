@@ -207,64 +207,79 @@
 
 .gradual-apparition {
     &__1 {
-        animation-duration: $plate-animation-duration;
+        animation-duration: $plate-apparition-duration;
         animation-name: plate-apparition-anim;
+        animation-timing-function: ease-in-out;
     }
     &__2 {
-        animation-duration: $plate-animation-duration*2;
+        animation-duration: $plate-apparition-duration*2;
         animation-name: plate-apparition-anim;
+        animation-timing-function: ease-in-out;
     }
     &__3 {
-        animation-duration: $plate-animation-duration*3;
+        animation-duration: $plate-apparition-duration*3;
         animation-name: plate-apparition-anim;
+        animation-timing-function: ease-in-out;
     }
     &__4 {
-        animation-duration: $plate-animation-duration*4;
+        animation-duration: $plate-apparition-duration*4;
         animation-name: plate-apparition-anim;
+        animation-timing-function: ease-in-out;
     }
     &__5 {
-        animation-duration: $plate-animation-duration*5;
+        animation-duration: $plate-apparition-duration*5;
         animation-name: plate-apparition-anim;
+        animation-timing-function: ease-in-out;
     }
     &__6 {
-        animation-duration: $plate-animation-duration*6;
+        animation-duration: $plate-apparition-duration*6;
         animation-name: plate-apparition-anim;
+        animation-timing-function: ease-in-out;
     }
     &__7 {
-        animation-duration: $plate-animation-duration*7;
+        animation-duration: $plate-apparition-duration*7;
         animation-name: plate-apparition-anim;
+        animation-timing-function: ease-in-out;
     }
     &__8 {
-        animation-duration: $plate-animation-duration*8;
+        animation-duration: $plate-apparition-duration*8;
         animation-name: plate-apparition-anim;
+        animation-timing-function: ease-in-out;
     }
     &__9 {
-        animation-duration: $plate-animation-duration*9;
+        animation-duration: $plate-apparition-duration*9;
         animation-name: plate-apparition-anim;
+        animation-timing-function: ease-in-out;
     }
     &__10 {
-        animation-duration: $plate-animation-duration*10;
+        animation-duration: $plate-apparition-duration*10;
         animation-name: plate-apparition-anim;
+        animation-timing-function: ease-in-out;
     }
     &__11 {
-        animation-duration: $plate-animation-duration*11;
+        animation-duration: $plate-apparition-duration*11;
         animation-name: plate-apparition-anim;
+        animation-timing-function: ease-in-out;
     }
     &__12 {
-        animation-duration: $plate-animation-duration*12;
+        animation-duration: $plate-apparition-duration*12;
         animation-name: plate-apparition-anim;
+        animation-timing-function: ease-in-out;
     }
     &__13 {
-        animation-duration: $plate-animation-duration*13;
+        animation-duration: $plate-apparition-duration*13;
         animation-name: plate-apparition-anim;
+        animation-timing-function: ease-in-out;
     }
     &__14 {
-        animation-duration: $plate-animation-duration*14;
+        animation-duration: $plate-apparition-duration*14;
         animation-name: plate-apparition-anim;
+        animation-timing-function: ease-in-out;
     }
     &__15 {
-        animation-duration: $plate-animation-duration*15;
+        animation-duration: $plate-apparition-duration*15;
         animation-name: plate-apparition-anim;
+        animation-timing-function: ease-in-out;
     }
 }
 
@@ -276,7 +291,7 @@
         opacity: 0;
         transform: translateY(15px);
     }
-    80% {
+    50% {
         opacity: 0;
         transform: translateY(15px);
     }
