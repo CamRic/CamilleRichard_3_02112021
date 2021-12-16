@@ -209,77 +209,77 @@
     &__1 {
         animation-duration: $plate-apparition-duration;
         animation-name: plate-apparition-anim;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
     }
     &__2 {
         animation-duration: $plate-apparition-duration*2;
         animation-name: plate-apparition-anim;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
     }
     &__3 {
         animation-duration: $plate-apparition-duration*3;
         animation-name: plate-apparition-anim;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
     }
     &__4 {
         animation-duration: $plate-apparition-duration*4;
         animation-name: plate-apparition-anim;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
     }
     &__5 {
         animation-duration: $plate-apparition-duration*5;
         animation-name: plate-apparition-anim;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
     }
     &__6 {
         animation-duration: $plate-apparition-duration*6;
         animation-name: plate-apparition-anim;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
     }
     &__7 {
         animation-duration: $plate-apparition-duration*7;
         animation-name: plate-apparition-anim;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
     }
     &__8 {
         animation-duration: $plate-apparition-duration*8;
         animation-name: plate-apparition-anim;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
     }
     &__9 {
         animation-duration: $plate-apparition-duration*9;
         animation-name: plate-apparition-anim;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
     }
     &__10 {
         animation-duration: $plate-apparition-duration*10;
         animation-name: plate-apparition-anim;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
     }
     &__11 {
         animation-duration: $plate-apparition-duration*11;
         animation-name: plate-apparition-anim;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
     }
     &__12 {
         animation-duration: $plate-apparition-duration*12;
         animation-name: plate-apparition-anim;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
     }
     &__13 {
         animation-duration: $plate-apparition-duration*13;
         animation-name: plate-apparition-anim;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
     }
     &__14 {
         animation-duration: $plate-apparition-duration*14;
         animation-name: plate-apparition-anim;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
     }
     &__15 {
         animation-duration: $plate-apparition-duration*15;
         animation-name: plate-apparition-anim;
-        animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in;
     }
 }
 
@@ -289,11 +289,11 @@
 @keyframes plate-apparition-anim {
     0% {
         opacity: 0;
-        transform: translateY(15px);
+        transform: translateY(10px);
     }
     50% {
         opacity: 0;
-        transform: translateY(15px);
+        transform: translateY(10px);
     }
     100% {
         opacity: 1;

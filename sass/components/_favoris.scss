@@ -16,7 +16,7 @@
 
         img {
             opacity: 1;
-            scale: 1.1;
+            scale: 1.07;
             animation: favoris-animation 800ms ease-in-out;
         }
     }
@@ -27,7 +27,7 @@
 
 @keyframes favoris-animation {
     0% {
-        transform-origin: 12px 12px;
+        transform-origin: 12px 13px;
         transform: scale(0);
         opacity: 0.5;
     }
